@@ -3,15 +3,15 @@
 
 #### Overview
 
-**Team name:**  Tu Bao
+**Team name:**  Tu Bao <br>
 **Team members:**
 - Dinh Gia Ngan
 - Truong Huy Hoang
 - Do Pham Mai Trinh
 - Nguyen Hoang Thanh Tram
 
-**Project durarion:** May 25 to June 28 (5 weeks)
-**Project Planning:** [TuBao Planning](https://docs.google.com/spreadsheets/d/13Ym3EV-sYJAQ0_Xt1vNckqShEBuUxSIhZmZSVy1vOeE/edit?usp=sharing)
+**Project durarion:** May 25 to June 28 (5 weeks) <br>
+**Project Planning:** [TuBao Planning](https://docs.google.com/spreadsheets/d/13Ym3EV-sYJAQ0_Xt1vNckqShEBuUxSIhZmZSVy1vOeE/edit?usp=sharing) <br>
 **Project Resository:** [TuBao Repository](https://github.com/huyhoang2564/Final_Web_G9_2.git)
 
 #### [Wireframe](https://www.figma.com/design/lumjnTSwrfq3pvea24Oon3/T%E1%BB%A9-B%C3%A1o-Makeup-Course?m=dev&node-id=126-6762&t=aonDm4djwS6b2jry-1): Our website has 4 main pages:
