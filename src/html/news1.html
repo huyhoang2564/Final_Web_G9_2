@@ -6,13 +6,62 @@
     <title>Document</title>
 </head>
 <body>
-    <!--Footer start from here-->
+    <!-- Navbar -->
+    <div class="sticky">
+        <div class="bg-gray-100">
+            <nav class="p-5 bg-white shadow md:flex md:justify-between">
+                <div class="flex justify-between items-center">
+                    <span class="text-2xl nav-font cursor-pointer flex items-center">
+                        <img src="src/image/logo/tubaologo.png" alt="Logo" class="nav-logo">
+                        TUBAO MAKEUP ACADEMY
+                    </span>
+                    <span class="text-3xl cursor-pointer mx-2 md:hidden block menu-icon">
+                        <ion-icon name="menu-outline" onclick="toggleMenu(this)"></ion-icon>
+                    </span>
+                </div>
+                <ul class="nav-menu md:flex md:items-center md:static absolute bg-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px]">
+                    <li class="mx-4 my-6 md:my-0">
+                        <a href="src/html/intro.html" class="text-lg font-medium hover:text-yellow-800 duration-500">Introduction</a>
+                    </li>
+                    <li class="mx-4 my-6 md:my-0 relative dropdown">
+                        <a href="src/html/course.html" class="text-lg font-medium hover:text-yellow-800 duration-500">Course</a>
+                        <div class="dropdown-content py-2 rounded-md">
+                            <a href="#" class="block px-4 py-2 hover:bg-gray-100">Personal Make Up Course</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-gray-100">Professional Make Up Course</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-gray-100">Bridal Make Up Course</a>
+                        </div>
+                    </li>
+                    <li class="mx-4 my-6 md:my-0 relative dropdown">
+                        <a href="src/html/service.html" class="text-lg font-medium hover:text-yellow-800 duration-500">Service</a>
+                        <div class="dropdown-content py- rounded-md">
+                            <a href="#" class="block px-4 py-2 hover:bg-gray-100">Party Make Up Service </a>
+                            <a href="#" class="block px-4 py-2 hover:bg-gray-100">Bridal Make Up Service </a>
+                            <a href="#" class="block px-4 py-2 hover:bg-gray-100">Ceremony Make Up Service </a>
+                        </div>
+                    </li>
+                    <li class="mx-4 my-6 md:my-0">
+                        <a href="#" class="text-lg font-medium hover:text-yellow-800 duration-500">Library</a>
+                    </li>
+                    <li class="mx-4 my-6 md:my-0">
+                        <a href="src/html/blog.html" class="text-lg font-medium hover:text-yellow-800 duration-500">Blog</a>
+                    </li>
+                    <li class="mx-4 my-6 md:my-0">
+                        <button class="bg-orange-900 text-white font-medium duration-500 px-6 py-2 hover:bg-orange-950 rounded-lg">
+                            <a href="src/html/intro.html">Contact us</a>
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+  
+  <!--Footer start from here-->
     <footer class="w-full">
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <!--Grid-->
             <div class="grid grid-cols-12 gap-8 py-14 lg:grid-cols-8">
                 <div class="mb-0 col-span-full lg:col-span-3 ">
-                   
+                
                     <div class="flex justify-between items-center">
                         <div class="text-2xl foot-font cursor-pointer flex items-center">
                             <a href="index.html" class="flex justify-center lg:justify-start items-center">
@@ -41,7 +90,7 @@
                             <img src="src/image/yticon/icons8-youtube-48.png" alt="YouTube Icon" class="w-full h-full rounded-full">
                         </a>
                     </div>
-                   
+                
                 </div>
                 <!--End Col-->
                 <div class="w-full text-center lg:w-auto lg:text-left col-span-full sm:col-span-4 md:col-span-4 lg:col-span-2 ">
@@ -71,7 +120,7 @@
                         <button type="submit" class="h-11 py-3 px-6 bg-black transition-all duration-500 shadow-md rounded-full text-sm text-white font-semibold w-fit hover:gray-500">Subscribe</button>
                     </div>
                 </div>
-             
+            
             </div>
             <!--Grid-->
             <div class="py-7 border-t border-gray-200">
@@ -87,6 +136,19 @@
         </div>
     </footer>
 
+    <script>
+        function toggleMenu(icon) {
+            let menu = document.querySelector('.nav-menu');
+            icon.name = icon.name === 'menu-outline' ? 'close-outline' : 'menu-outline';
+            menu.classList.toggle('top-[-400px]');
+            menu.classList.toggle('opacity-0');
+            menu.classList.toggle('top-[70px]');
+            menu.classList.toggle('opacity-100');
+        }
+    </script>
+
+        
+    <script type="module" src="/src/scripts/application.js"></script>
 
 </body>
 </html>
