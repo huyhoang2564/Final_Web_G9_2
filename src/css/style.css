@@ -44,3 +44,11 @@ min-width: 120px;
 border-radius: 15px;
 }
 
+.sticky {
+    position: -webkit-sticky; /* For Safari */
+    position: sticky;
+    top: 0px;
+    z-index: 50;
+    background-color: white;
+}
+
