@@ -54,27 +54,14 @@
             </nav>
         </div>
     </div>
-
-    <script>
-        function toggleMenu(icon) {
-            let menu = document.querySelector('.nav-menu');
-            icon.name = icon.name === 'menu-outline' ? 'close-outline' : 'menu-outline';
-            menu.classList.toggle('top-[-400px]');
-            menu.classList.toggle('opacity-0');
-            menu.classList.toggle('top-[70px]');
-            menu.classList.toggle('opacity-100');
-        }
-    </script>
-
-      
-   <script type="module" src="/src/scripts/application.js"></script>
-    <!--Footer start from here-->
+  
+  <!--Footer start from here-->
     <footer class="w-full">
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <!--Grid-->
             <div class="grid grid-cols-12 gap-8 py-14 lg:grid-cols-8">
                 <div class="mb-0 col-span-full lg:col-span-3 ">
-                   
+                
                     <div class="flex justify-between items-center">
                         <div class="text-2xl foot-font cursor-pointer flex items-center">
                             <a href="index.html" class="flex justify-center lg:justify-start items-center">
@@ -103,7 +90,7 @@
                             <img src="src/image/yticon/icons8-youtube-48.png" alt="YouTube Icon" class="w-full h-full rounded-full">
                         </a>
                     </div>
-                   
+                
                 </div>
                 <!--End Col-->
                 <div class="w-full text-center lg:w-auto lg:text-left col-span-full sm:col-span-4 md:col-span-4 lg:col-span-2 ">
@@ -133,7 +120,7 @@
                         <button type="submit" class="h-11 py-3 px-6 bg-black transition-all duration-500 shadow-md rounded-full text-sm text-white font-semibold w-fit hover:gray-500">Subscribe</button>
                     </div>
                 </div>
-             
+            
             </div>
             <!--Grid-->
             <div class="py-7 border-t border-gray-200">
@@ -149,6 +136,17 @@
         </div>
     </footer>
 
+    <script>
+        function toggleMenu(icon) {
+            let menu = document.querySelector('.nav-menu');
+            icon.name = icon.name === 'menu-outline' ? 'close-outline' : 'menu-outline';
+            menu.classList.toggle('top-[-400px]');
+            menu.classList.toggle('opacity-0');
+            menu.classList.toggle('top-[70px]');
+            menu.classList.toggle('opacity-100');
+        }
+    </script>
 
+    <script type="module" src="/src/scripts/application.js"></script>
 </body>
 </html>

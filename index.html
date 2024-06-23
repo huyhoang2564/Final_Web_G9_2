@@ -61,22 +61,8 @@
         </div>
     </div>
 
-    <script>
-        function toggleMenu(icon) {
-            let menu = document.querySelector('.nav-menu');
-            icon.name = icon.name === 'menu-outline' ? 'close-outline' : 'menu-outline';
-            menu.classList.toggle('top-[-400px]');
-            menu.classList.toggle('opacity-0');
-            menu.classList.toggle('top-[70px]');
-            menu.classList.toggle('opacity-100');
-        }
-    </script>
-
-        
-    <script type="module" src="/src/scripts/application.js"></script>
-
-    
-    <!--Footer start from here-->
+ 
+  <!--Footer start from here-->
     <footer class="w-full">
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <!--Grid-->
@@ -157,9 +143,20 @@
         </div>
     </footer>
 
+    <script>
+        function toggleMenu(icon) {
+            let menu = document.querySelector('.nav-menu');
+            icon.name = icon.name === 'menu-outline' ? 'close-outline' : 'menu-outline';
+            menu.classList.toggle('top-[-400px]');
+            menu.classList.toggle('opacity-0');
+            menu.classList.toggle('top-[70px]');
+            menu.classList.toggle('opacity-100');
+        }
+    </script>
 
-  
-   <script type="module" src="/src/scripts/application.js"></script>
+      
+    <script type="module" src="/src/scripts/application.js"></script>
+
 
    
 </body>
