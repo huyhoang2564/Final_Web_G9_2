@@ -52,3 +52,27 @@ border-radius: 15px;
     background-color: white;
 }
 
+/* Footer */
+.foot-font {
+    font-weight: 600;
+    letter-spacing: 0.05em;
+}
+/* Thêm khoảng cách giữa hình ảnh và văn bản */
+.mr-2 {
+    margin-right: 0.5rem; /* 8px */
+}
+
+.foot-logo {
+    display: block;
+    /* Điều chỉnh kích thước logo nếu cần */
+    height: 50px;
+    width: auto;
+}
+
+/* Đảm bảo văn bản và hình ảnh được căn giữa theo chiều dọc */
+a.flex.items-center {
+    display: flex;
+    align-items: center;
+}
+
+
