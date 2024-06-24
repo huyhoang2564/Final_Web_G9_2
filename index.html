@@ -12,14 +12,11 @@
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,900&display=swap" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="src/css/home.css">
     <title>Tu Bao Makeup Academy</title>
 
 </head>
 <body>
-
-    
-
-
     <!-- Navbar -->
     <div class="sticky">
         <div class="bg-gray-100">
@@ -115,6 +112,86 @@
         </div>
     </div>
 
+    <main class="bg-main flex justify-center items-center min-h-screen">
+        <div class="container mx-auto p-6 bg-white shadow-lg rounded-lg shadow-custom">
+            <h1 class="text-5xl font-bold text-gray-800 mb-16 text-center">TuBao Makeup Academy</h1>
+            <div class="grid gap-12 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+                <!--Card 1 - Personal Make up-->
+                <div class="relative flex flex-col mt-6 text-gray-700 bg-white shadow-md bg-clip-border rounded-xl transition-all hover:shadow-custom">
+                    <div class="relative h-64 mx-4 -mt-6 overflow-hidden text-white shadow-lg bg-clip-border rounded-xl shadow-blue-gray-500/40 ">
+                        <img class="card-img w-full h-full object-cover" src="src/image/homepage/course1.jpg" alt="Personal Makeup Course">
+                    </div>
+                    <div class="p-6">
+                        <h5 class="block mb-2 font-sans text-xl text-center antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
+                            Personal Makeup Course
+                        </h5>
+                        <p class="block font-sans text-base antialiased font-light leading-relaxed text-inherit text-justify">
+                            Unlock your inner artist and learn to enhance your natural beauty. This beginner-friendly course empowers you to look and feel your best every day.
+                        </p>
+                    </div>
+                    <div class="p-6 pt-0 flex justify-between">
+                        <button class="btn flex-1 mx-1 align-middle select-none font-sans font-bold text-center uppercase text-xs py-3 px-6 rounded-lg shadow-md focus:opacity-85 active:opacity-85" type="button">
+                            Read More
+                        </button>
+                        <button class="btn-secondary flex-1 mx-1 align-middle select-none font-sans font-bold text-center uppercase text-xs py-3 px-6 rounded-lg shadow-md focus:opacity-85 active:opacity-85" type="button">
+                            Enroll Now
+                        </button>
+                    </div>
+                </div>
+                <!--Card 2 - Professional Make Up-->
+                <div class="relative flex flex-col mt-6 text-gray-700 bg-white shadow-md bg-clip-border rounded-xl transition-all hover:shadow-custom">
+                    <div class="relative h-64 mx-4 -mt-6 overflow-hidden text-white shadow-lg bg-clip-border rounded-xl shadow-blue-gray-500/40">
+                        <img class="card-img w-full h-full object-cover" src="src/image/homepage/course2.jpg" alt="Professional Makeup Course">
+                    </div>
+                    <div class="p-6">
+                        <h5 class="block mb-2 font-sans text-xl text-center antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
+                            Professional Makeup Course
+                        </h5>
+                        <p class="block font-sans text-base antialiased font-light leading-relaxed text-inherit text-justify">
+                            Take your skills to the next level and become a sought-after makeup artist. Dive into advanced techniques and gain the confidence to shine in the beauty industry.
+                        </p>
+                    </div>
+                    <div class="p-6 pt-0 flex justify-between">
+                        <button class="btn flex-1 mx-1 align-middle select-none font-sans font-bold text-center uppercase text-xs py-3 px-6 rounded-lg shadow-md focus:opacity-85 active:opacity-85" type="button">
+                            Read More
+                        </button>
+                        <button class="btn-secondary flex-1 mx-1 align-middle select-none font-sans font-bold text-center uppercase text-xs py-3 px-6 rounded-lg shadow-md focus:opacity-85 active:opacity-85" type="button">
+                            Enroll Now
+                        </button>
+                    </div>
+                </div>
+                <!--Card 3 - Bridal Make up-->
+                <div class="relative flex flex-col mt-6 text-gray-700 bg-white shadow-md bg-clip-border rounded-xl transition-all hover:shadow-custom">
+                    <div class="relative h-64 mx-4 -mt-6 overflow-hidden text-white shadow-lg bg-clip-border rounded-xl shadow-blue-gray-500/40">
+                        <img class="card-img w-full h-full object-cover" src="src/image/homepage/course3.jpg" alt="Bridal Makeup Course">
+                    </div>
+                    <div class="p-6">
+                        <h5 class="block mb-2 font-sans text-xl text-center antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
+                            Bridal Makeup Course
+                        </h5>
+                        <p class="block font-sans text-base antialiased font-light leading-relaxed text-inherit text-justify">
+                            Master the art of bridal beauty and create unforgettable looks for every bride. Transform your passion into a profession with expert techniques and hands-on practice.
+                        </p>
+                    </div>
+                    <div class="p-6 pt-0 flex justify-between">
+                        <button class="btn flex-1 mx-1 align-middle select-none font-sans font-bold text-center uppercase text-xs py-3 px-6 rounded-lg shadow-md focus:opacity-85 active:opacity-85" type="button">
+                            Read More
+                        </button>
+                        <button class="btn-secondary flex-1 mx-1 align-middle select-none font-sans font-bold text-center uppercase text-xs py-3 px-6 rounded-lg shadow-md focus:opacity-85 active:opacity-85" type="button">
+                            Enroll Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--Link to the next page-->
+            <div class="mt-16 text-center">
+                <a href="course.html" class="inline-block btn-secondary py-3 px-8 rounded-lg font-bold transition duration-300 hover:bg-gray-300">See all</a>
+                <a href="form.html" class="inline-block btn py-3 px-8 rounded-lg font-bold transition duration-300 hover:bg-orange-950 ml-4">Contact us</a>
+            </div>
+        </div>
+    </main>
+
+
     <!--Footer start from here-->
     <footer class="w-full">
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -135,19 +212,19 @@
                     <p class="py-8  text-gray-500 lg:max-w-xs text-center lg:text-left">Trusted in more than 100 countries & 5 million customers. Follow us on social media.</p>
                     <div class="flex mt-4 space-x-4 justify-center lg:justify-start sm:mt-0">
                         <a href="intro.html" class="w-8 h-8 rounded-full transition-all duration-500 flex justify-center items-center">
-                            <img src="src/image/ttokicon/icons8-tiktok-48.png" alt="TikTok Icon" class="w-full h-full rounded-full">
+                            <img src="src/social/image/ttokicon/icons8-tiktok-48.png" alt="TikTok Icon" class="w-full h-full rounded-full">
                         </a>
                         <a href="#" class="relative w-8 h-8 rounded-full transition-all duration-500 flex justify-center items-center">
                             <!-- Twitter Icon -->
-                            <img src="src/image/fbicon/icons8-facebook-48.png" alt="Twitter Icon" class="w-full h-full rounded-full">
+                            <img src="src/image/social/fbicon/icons8-facebook-48.png" alt="Twitter Icon" class="w-full h-full rounded-full">
                         </a>
                         <a href="#" class="relative w-8 h-8 rounded-full transition-all duration-500 flex justify-center items-center ">
                             <!-- Facebook Icon -->
-                            <img src="src/image/igicon/icons8-instagram-48.png" alt="Facebook Icon" class="w-full h-full rounded-full">
+                            <img src="src/image/social/igicon/icons8-instagram-48.png" alt="Facebook Icon" class="w-full h-full rounded-full">
                         </a>
                         <a href="#" class="relative w-8 h-8 rounded-full transition-all duration-500 flex justify-center items-center">
                             <!-- YouTube Icon -->
-                            <img src="src/image/yticon/icons8-youtube-48.png" alt="YouTube Icon" class="w-full h-full rounded-full">
+                            <img src="src/image/social/yticon/icons8-youtube-48.png" alt="YouTube Icon" class="w-full h-full rounded-full">
                         </a>
                     </div>
                 
