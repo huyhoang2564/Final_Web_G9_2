@@ -1,0 +1,59 @@
+/* Custom CSS for animations - Header - index.html start from here*/
+.transition-transform {
+    transition: transform 0.3s ease-in-out;
+}
+.hover-scale:hover {
+    transform: scale(1.05);
+}
+.transition-opacity {
+    transition: opacity 0.3s ease-in-out;
+}
+.hover-opacity:hover {
+    opacity: 0.7;
+}
+.transition-bg {
+    transition: background-color 0.3s ease-in-out;
+}
+.hover-bg-orange:hover {
+    background-color: #ff7043; /* Slightly different shade of orange */
+}
+
+/* Custom CSS for animations - Header - index.html end from here*/
+
+/*Couse & Service Section*/
+
+.bg-main {
+    background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+}
+.shadow-custom {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+.hover\:shadow-custom:hover {
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+.transition-all {
+    transition: all 0.3s ease-in-out;
+}
+.card-img {
+    transition: transform 0.3s ease-in-out;
+}
+.card-img:hover {
+    transform: scale(1.05);
+}
+.btn {
+    background-color: #3a1b00;
+    color: #fff;
+    transition: background-color 0.3s ease-in-out;
+}
+.btn:hover {
+    background-color: #ae6f3e;
+}
+.btn-secondary {
+    background-color: #ae6f3e;
+    color: #fff;
+    transition: background-color 0.3s ease-in-out;
+}
+.btn-secondary:hover {
+    background-color: #3a1b00;
+    color: #fff;
+}
