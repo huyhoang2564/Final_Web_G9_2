@@ -3,60 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="src/image/logo/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="src/image/logo/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="src/image/logo/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,900&display=swap" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <title>Tu Bao Makeup Academy</title>
 
 </head>
 <body>
 
-    <!--Header - Homepage-->
-    <div class="bg-gray-100">
-        <div class="flex min-h-screen w-screen">
-            <div class="relative my-auto mx-auto flex flex-col px-8 sm:max-w-xl md:max-w-screen-xl md:flex-row">
-                <!-- Left Column --> 
-                <div class="my-auto mx-auto w-full max-w-xl md:mt-56 lg:max-w-screen-xl md:mr-8">
-                    <div class="mb-16 lg:mb-0 lg:max-w-lg">
-                        <div class="mb-6 max-w-xl">
-                            <h2 class="mb-6 max-w-lg text-4xl font-bold tracking-tight text-slate-700 sm:text-5xl sm:leading-snug">
-                                Tu Bao <br />
-                                <span class="inline-block font-bold text-orange-600">Makeup Academy</span>
-                            </h2>
-                            <p class="text-base text-justify text-gray-700 md:text-lg">With over 10 years of experience in the field of makeup and training students, TuBao Makeup has gradually become influential in the professional domain and has brought significant value to the community.</p>
-                        </div>
-                        <div class="flex items-center">
-                            <a href="/" class="mr-6 inline-flex h-12 items-center justify-center rounded-xl bg-orange-600 px-6 font-medium tracking-wide text-white shadow-md outline-none transition duration-200 hover:bg-orange-400 focus:ring hover-scale transition-bg hover-bg-orange"> About Us </a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Left Column --> 
-
-                <!-- Right Column -->
-                <div class="flex h-full w-full space-x-3 overflow-hidden md:justify-end">
-                    <!-- Col 2 -->
-                    <div class="hidden w-56 items-center space-y-3 md:mt-36 lg:flex">
-                        <div class="overflow-hidden rounded-lg transition-transform hover-scale">
-                            <img class="h-full w-full object-contain" src="src/image/homepage/headerhome1.jpg" alt="" />
-                        </div>
-                    </div>
-                    <div class="my-auto flex space-x-3 rounded-xl md:mt-36 md:w-60 md:flex-col md:space-y-3 md:space-x-0 md:px-4">
-                        <div class="h-40 overflow-hidden rounded-xl transition-transform hover-scale hover-opacity">
-                            <img class="bg-center mx-auto object-contain object-bottom" src="src/image/homepage/headerhome2.jpg" alt="" />
-                        </div>
-                        <div class="h-40 overflow-hidden rounded-xl transition-transform hover-scale hover-opacity">
-                            <img class="mx-auto object-contain object-bottom" src="src/image/homepage/headerhome3.jpg" alt="" />
-                        </div>
-                        <div class="h-40 overflow-hidden rounded-xl transition-transform hover-scale hover-opacity">
-                            <img class="mx-auto object-contain object-bottom" src="src/image/homepage/headerhome4.jpg" alt="" />
-                        </div>
-                    </div>
-                </div>
-                <!-- Right Column -->
-            </div>
-        </div>
-    </div>
+    
 
 
     <!-- Navbar -->
@@ -107,8 +68,54 @@
             </nav>
         </div>
     </div>
-  
-  <!--Footer start from here-->
+
+    <!--Header - Homepage-->
+    <div class="bg-gray-100">
+        <div class="flex min-h-screen w-screen">
+            <div class="relative my-auto mx-auto flex flex-col px-8 sm:max-w-xl md:max-w-screen-xl md:flex-row">
+                <!-- Left Column --> 
+                <div class="my-auto mx-auto w-full max-w-xl md:mt-56 lg:max-w-screen-xl md:mr-8">
+                    <div class="mb-16 lg:mb-0 lg:max-w-lg">
+                        <div class="mb-6 max-w-xl">
+                            <h2 class="mb-6 max-w-lg text-4xl font-bold tracking-tight text-slate-700 sm:text-5xl sm:leading-snug">
+                                Tu Bao <br />
+                                <span class="inline-block font-bold text-orange-600">Makeup Academy</span>
+                            </h2>
+                            <p class="text-base text-justify text-gray-700 md:text-lg">With over 10 years of experience in the field of makeup and training students, TuBao Makeup has gradually become influential in the professional domain and has brought significant value to the community.</p>
+                        </div>
+                        <div class="flex items-center">
+                            <a href="/" class="mr-6 inline-flex h-12 items-center justify-center rounded-xl bg-orange-600 px-6 font-medium tracking-wide text-white shadow-md outline-none transition duration-200 hover:bg-orange-400 focus:ring hover-scale transition-bg hover-bg-orange"> About Us </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Left Column --> 
+
+                <!-- Right Column -->
+                <div class="flex h-full w-full space-x-3 overflow-hidden md:justify-end">
+                    <!-- Col 2 -->
+                    <div class="hidden w-56 items-center space-y-3 md:mt-36 lg:flex">
+                        <div class="overflow-hidden rounded-lg transition-transform hover-scale">
+                            <img class="h-full w-full object-contain" src="src/image/homepage/headerhome1.jpg" alt="" />
+                        </div>
+                    </div>
+                    <div class="my-auto flex space-x-3 rounded-xl md:mt-36 md:w-60 md:flex-col md:space-y-3 md:space-x-0 md:px-4">
+                        <div class="h-40 overflow-hidden rounded-xl transition-transform hover-scale hover-opacity">
+                            <img class="bg-center mx-auto object-contain object-bottom" src="src/image/homepage/headerhome2.jpg" alt="" />
+                        </div>
+                        <div class="h-40 overflow-hidden rounded-xl transition-transform hover-scale hover-opacity">
+                            <img class="mx-auto object-contain object-bottom" src="src/image/homepage/headerhome3.jpg" alt="" />
+                        </div>
+                        <div class="h-40 overflow-hidden rounded-xl transition-transform hover-scale hover-opacity">
+                            <img class="mx-auto object-contain object-bottom" src="src/image/homepage/headerhome4.jpg" alt="" />
+                        </div>
+                    </div>
+                </div>
+                <!-- Right Column -->
+            </div>
+        </div>
+    </div>
+
+    <!--Footer start from here-->
     <footer class="w-full">
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <!--Grid-->
