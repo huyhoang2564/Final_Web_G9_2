@@ -23,7 +23,7 @@
 /*Couse & Service Section*/
 
 .bg-main {
-    background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+    background: #fff
 }
 .shadow-custom {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
