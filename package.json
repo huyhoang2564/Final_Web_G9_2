@@ -2,7 +2,7 @@
   "name": "final_web_g9_2",
   "type": "module",
   "version": "1.0.0",
-  "description": "",
+  "description": "**Team name:**  Tu Bao <br>\r **Team members:**\r - Dinh Gia Ngan\r - Truong Huy Hoang\r - Do Pham Mai Trinh\r - Nguyen Hoang Thanh Tram",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -10,7 +10,6 @@
     "build": "vite build",
     "preview": "vite preview"
   },
-
   "repository": {
     "type": "git",
     "url": "git+https://github.com/huyhoang2564/Final_Web_G9_2.git"
@@ -25,6 +24,6 @@
     "autoprefixer": "^10.4.19",
     "postcss": "^8.4.38",
     "tailwindcss": "^3.4.4",
-    "vite": "^5.2.13"
+    "vite": "^5.3.1"
   }
 }

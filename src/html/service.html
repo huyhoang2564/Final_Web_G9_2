@@ -12,17 +12,21 @@
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,900&display=swap" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script type="module" src="/src/scripts/smoothscroll.js"></script>
+    <link rel="stylesheet" href="src/css/serivce.css">
+    <link rel="stylesheet" href="src/css/style.css">
+    <script type="module" src="/src/scripts/service.js"></script>
     <title>Tu Bao Makeup Services</title>
 </head>
 <body>
-    <!-- Navbar -->
-    <div class="sticky">
-        <div class="bg-gray-100">
-            <nav class="p-5 bg-white shadow md:flex md:justify-between">
+    <header>
+        <div class="sticky">
+            <!-- Navbar -->
+            <nav class="p-5 bg-white shadow md:flex md:justify-between relative z-50">
                 <div class="flex justify-between items-center">
                     <span class="text-2xl nav-font cursor-pointer flex items-center">
-                        <img src="src/image/logo/tubaologo.png" alt="Logo" class="nav-logo">
-                        TUBAO MAKEUP ACADEMY
+                        <img src="/src/image/logo/Tubao.png" alt="Logo" class="nav-logo">
+                        <a href="/index.html">TUBAO MAKEUP ACADEMY</a>
                     </span>
                     <span class="text-3xl cursor-pointer mx-2 md:hidden block menu-icon">
                         <ion-icon name="menu-outline" onclick="toggleMenu(this)"></ion-icon>
@@ -30,40 +34,274 @@
                 </div>
                 <ul class="nav-menu md:flex md:items-center md:static absolute bg-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px]">
                     <li class="mx-4 my-6 md:my-0">
-                        <a href="src/html/intro.html" class="text-lg font-medium hover:text-yellow-800 duration-500">Introduction</a>
+                        <a href="/src/html/intro.html" class="text-lg font-medium hover:text-yellow-800 duration-500">Introduction</a>
                     </li>
                     <li class="mx-4 my-6 md:my-0 relative dropdown">
-                        <a href="src/html/course.html" class="text-lg font-medium hover:text-yellow-800 duration-500">Course</a>
+                        <a href="/src/html/course.html" class="text-lg font-medium hover:text-yellow-800 duration-500">Course</a>
                         <div class="dropdown-content py-2 rounded-md">
-                            <a href="#" class="block px-4 py-2 hover:bg-gray-100">Personal Make Up Course</a>
-                            <a href="#" class="block px-4 py-2 hover:bg-gray-100">Professional Make Up Course</a>
-                            <a href="#" class="block px-4 py-2 hover:bg-gray-100">Bridal Make Up Course</a>
+                            <a href="/src/html/course.html#personal-makeup-course" class="block px-4 py-2 hover:bg-gray-100">Personal Makeup Course</a>
+                            <a href="/src/html/course.html#professional-makeup-course" class="block px-4 py-2 hover:bg-gray-100">Professional Makeup Course</a>
+                            <a href="/src/html/course.html#bridal-makeup-course" class="block px-4 py-2 hover:bg-gray-100">Bridal Makeup Course</a>
                         </div>
                     </li>
                     <li class="mx-4 my-6 md:my-0 relative dropdown">
-                        <a href="src/html/service.html" class="text-lg font-medium hover:text-yellow-800 duration-500">Service</a>
+                        <a href="/src/html/service.html" class="text-lg font-medium hover:text-yellow-800 duration-500">Service</a>
                         <div class="dropdown-content py- rounded-md">
-                            <a href="#" class="block px-4 py-2 hover:bg-gray-100">Party Make Up Service </a>
-                            <a href="#" class="block px-4 py-2 hover:bg-gray-100">Bridal Make Up Service </a>
-                            <a href="#" class="block px-4 py-2 hover:bg-gray-100">Ceremony Make Up Service </a>
+                            <a href="/src/html/service.html#our-service" class="block px-4 py-2 hover:bg-gray-100">Our service</a>
+                            <a href="/src/html/service.html#tutor" class="block px-4 py-2 hover:bg-gray-100">Tutor</a>
+                            <a href="/src/html/service.html#student" class="block px-4 py-2 hover:bg-gray-100">Student</a>
                         </div>
                     </li>
                     <li class="mx-4 my-6 md:my-0">
                         <a href="#" class="text-lg font-medium hover:text-yellow-800 duration-500">Library</a>
                     </li>
                     <li class="mx-4 my-6 md:my-0">
-                        <a href="src/html/blog.html" class="text-lg font-medium hover:text-yellow-800 duration-500">Blog</a>
+                        <a href="/src/html/blog.html" class="text-lg font-medium hover:text-yellow-800 duration-500">Blog</a>
                     </li>
                     <li class="mx-4 my-6 md:my-0">
                         <button class="bg-orange-900 text-white font-medium duration-500 px-6 py-2 hover:bg-orange-950 rounded-lg">
-                            <a href="src/html/intro.html">Contact us</a>
+                            <a href="/src/html/form.html">Contact Us</a> 
                         </button>
                     </li>
                 </ul>
             </nav>
         </div>
-    </div>
+    </header> 
 
+
+    <!-- Video Background Section -->
+    <main>
+        <div class="w-full h-400 relative bg-fixed bg-cover bg-center bg-no-repeat video-section" style="height: 470px;">
+            <video class="h-full w-full object-cover rounded-lg" autoplay muted loop>
+                <source src="/src/image/Dior Forever - The Iconic Clean Foundation.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+            </video>
+            <div class="absolute inset-0 flex items-center justify-center h-full bg-black bg-opacity-50">
+                <div class="text-center text-white animate__animated animate__fadeIn">
+                    <h1 class="text-6xl font-bold mb-4">Welcome to Your Makeup Journey</h1>
+                    <p class="text-xl mb-8">Discover new skills and technic that awake your beauty</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Brief intro service starts from here -->
+    <section class=" bg-white mt-16 mb-6 py-12">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="section-title text-4xl sm:text-5xl font-bold tracking-tight text-gray-900 mb-4">TuBao Makeup Academy’s Courses</h2>
+            <p class="mx-auto mt-6 mb-6 text-2xl tracking-tight text-gray-900">
+                Start your new makeup career with TuBao Makeup training now!</p>
+        </div>
+      
+        <!-- Grid Courses -->
+        <div class="max-w-screen-xl 2xl:max-w-screen-2xl px-6 md:px-12 mx-auto py-12 lg:py-12">
+          <!-- Starts component -->
+          <div class="grid grid-cols-1 md:grid-cols-3 lg:gap-6 gap-y-12">
+            <article class="mx-auto shadow-xl bg-cover bg-center relative border-8 border-black transform duration-500 hover:-translate-y-12 group mb-5" style="background-image: url('/src/image/servicepage/personal_makeup_service.jpg');">
+                <div class="bg-black relative h-full group-hover:bg-opacity-0 flex flex-wrap flex-col pt-[30rem] hover:bg-opacity-75 transition duration-300">
+                    <div class="bg-black p-8 h-full justify-end flex flex-col">
+                        <h1 class="text-white text-center mt-2 text-xl mb-5 transform translate-y-20 uppercase group-hover:translate-y-0 duration-300 group-hover:text-orange-500"> 01⏤ Party Makeup Service </h1>
+                        <p class="opacity-0 text-white text-center text-xl group-hover:opacity-80 transform duration-500 "> Crafting an effortless journey with user-first. </p>
+                    </div>
+                </div>
+            </article>
+            <article class="mx-auto shadow-xl bg-cover bg-center relative border-8 border-black transform duration-500 hover:-translate-y-12 group mb-5" style="background-image: url('/src/image/servicepage/professional-makeup-service.jpg');">
+                <div class="bg-black relative h-full group-hover:bg-opacity-0 flex flex-wrap flex-col pt-[30rem] hover:bg-opacity-75 transition duration-300">
+                    <div class="bg-black p-8 h-full justify-end flex flex-col">
+                        <h1 class="text-white text-center mt-2 text-xl mb-5 transform translate-y-20 uppercase group-hover:translate-y-0 duration-300 group-hover:text-indigo-400"> 02⏤ Bridal Makeup Service</h1>
+                        <p class="opacity-0 text-white text-center text-xl group-hover:opacity-80 transform duration-500"> Our platform is designed for simplicity and ease. </p>
+                    </div>
+                </div>
+            </article>
+            <article class="mx-auto shadow-xl bg-cover bg-center relative border-8 border-black transform duration-500 hover:-translate-y-12 group mb-5" style="background-image: url('/src/image/servicepage/bridal_makeup_service.jpg');">
+                <div class="bg-black relative h-full group-hover:bg-opacity-0 flex flex-wrap flex-col pt-[30rem] hover:bg-opacity-75 transition duration-300">
+                    <div class="bg-black p-8 h-full justify-end flex flex-col">
+                    <h1 class="text-white text-center mt-2 text-xl mb-5 transform translate-y-20 uppercase group-hover:translate-y-0 duration-300 group-hover:text-cyan-400"> 03⏤ Ceremony Makeup Service </h1>
+                    <p class="opacity-0 text-white text-center text-xl group-hover:opacity-80 transform duration-500"> Create flawless bridal makeup layouts. </p>
+                    </div>
+                </div>
+            </article>
+          </div> <!-- ends component -->
+        </div>
+    </section>  
+    <!-- Brief intro ends here-->
+
+
+
+
+
+
+    <!-- Service start from here-->
+    <article id="our-service" class="bg-gradient-to-b from-gray-800 to-teal-200 py-16">
+        <div class="container m-auto pb-4 md:px-10 lg:px-0">
+          <div class="m-auto text-center lg:w-11/12 xl:w-7/12">
+            <h2 class="text-white font-bold text-5xl">Luxury, On-Location Services</h2>
+          </div>
+        </div>  
+  
+        <div class="px-6 md:px-12 pb-4">
+          <!-- Party Service start from here-->
+            <section class="mt-12 m-auto -space-y-4 items-center justify-center md:flex md:space-y-0 md:-space-x-4 xl:w-10/12">
+                    <div class="relative z-10 -mx-4 group md:w-9/12 md:mx-0 lg:w-9/12">
+                        <div aria-hidden="true" class="absolute top-0 w-full h-full rounded-2xl bg-white shadow-xl transition duration-500 group-hover:scale-105 lg:group-hover:scale-110"></div>
+                        <div class="relative p-6 space-y-6 lg:p-8">
+                            <h3 class="text-3xl text-gray-700 font-semibold text-center">01⏤ Party Makeup Service</h3>
+                            <div>
+                                <img src="https://i.pinimg.com/474x/13/9c/cc/139cccb7cf15180092a70425e2cf603e.jpg" alt="Promotional Image" class="w-full h-auto rounded-2xl">
+                            </div>
+                            <p class="flex items-center justify-center space-x-4 text-lg text-gray-600 text-center mt-6">
+                        </div>
+                    </div>
+    
+                    <div class="relative group md:w-11/12 lg:w-11/12 ">
+                        <div aria-hidden="true" class="absolute top-0 w-full h-full rounded-2xl bg-white shadow-lg transition duration-500 group-hover:scale-105"></div>
+                        <div class="relative p-6 pt-16 md:p-8 md:pl-12 md:rounded-r-2xl lg:pl-20 lg:p-16">
+                            <p class="text-3xl text-gray-700 font-semibold">What We Offer:</p>
+                            <ul role="list" class="space-y-4 py-6 px-4 mx-auto text-gray-600 text-left">
+                                <li class="space-x-2">
+                                    <span class="text-orange-700 font-semibold">&check;</span>
+                                    <span>MAKEUP APPLICATION</span>
+                                </li>
+                                <li class="space-x-2">
+                                    <span class="text-orange-700 font-semibold">&check;</span>
+                                    <span>HAIR STYLING</span>
+                                </li>
+                                <li class="space-x-2">
+                                    <span class="text-orange-700 font-semibold">&check;</span>
+                                    <span>HAIR EXTENSIONS</span>
+                                </li>
+                                <li class="space-x-2">
+                                    <span class="text-orange-700 font-semibold">&check;</span>
+                                    <span> EXCLUSIVE ACCESSORIES</span>
+                                </li>
+                            </ul>
+                            <p class="flex items-center justify-center space-x-4 text-lg text-gray-600 text-center">
+                                <span>Call us at</span>
+                                <a href="tel:+24300" class="flex space-x-2 items-center text-orange-700">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-6" viewBox="0 0 16 16">
+                                        <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                                    </svg>
+                                    <span class="font-semibold">+1 000 000</span>
+                                </a>
+                            </p>    
+                            <!-- Correct the div tag with appropriate button attributes -->
+                            <div class="buttons flex justify-center mt-4">
+                                <button class="register-btn bg-orange-700 text-white py-3 px-6 rounded-lg mr-5 hover:bg-orange-950 transition duration-300">Book now</button>
+                                <button class="learn-btn bg-white text-orange-900 border-2 border-orange-950 py-3 px-6 rounded-lg hover:bg-orange-900 hover:text-white transition duration-300">Learn more</button>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+      
+  
+            <section class="mt-12 m-auto -space-y-4 items-center justify-center md:flex md:space-y-0 md:-space-x-4 xl:w-10/12">
+                <div class="relative z-10 -mx-4 group md:w-9/12 md:mx-0 lg:w-9/12">
+                    <div aria-hidden="true" class="absolute top-0 w-full h-full rounded-2xl bg-white shadow-xl transition duration-500 group-hover:scale-105 lg:group-hover:scale-110"></div>
+                    <div class="relative p-6 space-y-6 lg:p-8">
+                        <h3 class="text-3xl text-gray-700 font-semibold text-center">01⏤ Party Makeup Service</h3>
+                        <div>
+                            <img src="https://i.pinimg.com/474x/13/9c/cc/139cccb7cf15180092a70425e2cf603e.jpg" alt="Promotional Image" class="w-full h-auto rounded-2xl">
+                        </div>
+                        <p class="flex items-center justify-center space-x-4 text-lg text-gray-600 text-center mt-6">
+                    </div>
+                </div>
+
+                <div class="relative group md:w-11/12 lg:w-11/12 ">
+                    <div aria-hidden="true" class="absolute top-0 w-full h-full rounded-2xl bg-white shadow-lg transition duration-500 group-hover:scale-105"></div>
+                    <div class="relative p-6 pt-16 md:p-8 md:pl-12 md:rounded-r-2xl lg:pl-20 lg:p-16">
+                        <p class="text-3xl text-gray-700 font-semibold">What We Offer:</p>
+                        <ul role="list" class="space-y-4 py-6 px-4 mx-auto text-gray-600 text-left">
+                            <li class="space-x-2">
+                                <span class="text-orange-700 font-semibold">&check;</span>
+                                <span>MAKEUP APPLICATION</span>
+                            </li>
+                            <li class="space-x-2">
+                                <span class="text-orange-700 font-semibold">&check;</span>
+                                <span>HAIR STYLING</span>
+                            </li>
+                            <li class="space-x-2">
+                                <span class="text-orange-700 font-semibold">&check;</span>
+                                <span>HAIR EXTENSIONS</span>
+                            </li>
+                            <li class="space-x-2">
+                                <span class="text-orange-700 font-semibold">&check;</span>
+                                <span> EXCLUSIVE ACCESSORIES</span>
+                            </li>
+                        </ul>
+                        <p class="flex items-center justify-center space-x-4 text-lg text-gray-600 text-center">
+                            <span>Call us at</span>
+                            <a href="tel:+24300" class="flex space-x-2 items-center text-orange-700">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-6" viewBox="0 0 16 16">
+                                    <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                                </svg>
+                                <span class="font-semibold">+1 000 000</span>
+                            </a>
+                        </p>    
+                        <!-- Correct the div tag with appropriate button attributes -->
+                        <div class="buttons flex justify-center mt-4">
+                            <button class="register-btn bg-orange-700 text-white py-3 px-6 rounded-lg mr-5 hover:bg-orange-950 transition duration-300">Book Now</button>
+                            <button class="learn-btn bg-white text-orange-900 border-2 border-orange-950 py-3 px-6 rounded-lg hover:bg-orange-900 hover:text-white transition duration-300">Learn more</button>
+                        </div>
+                    </div>
+                </div>
+        </section>
+  
+        <!-- Ceremony Service start from here-->
+        <section class="mt-12 m-auto -space-y-4 items-center justify-center md:flex md:space-y-0 md:-space-x-4 xl:w-10/12">
+            <div class="relative z-10 -mx-4 group md:w-9/12 md:mx-0 lg:w-9/12">
+                <div aria-hidden="true" class="absolute top-0 w-full h-full rounded-2xl bg-white shadow-xl transition duration-500 group-hover:scale-105 lg:group-hover:scale-110"></div>
+                <div class="relative p-6 space-y-6 lg:p-8">
+                    <h3 class="text-3xl text-gray-700 font-semibold text-center">01⏤ Party Makeup Service</h3>
+                    <div>
+                        <img src="https://i.pinimg.com/474x/13/9c/cc/139cccb7cf15180092a70425e2cf603e.jpg" alt="Promotional Image" class="w-full h-auto rounded-2xl">
+                    </div>
+                    <p class="flex items-center justify-center space-x-4 text-lg text-gray-600 text-center mt-6">
+                </div>
+            </div>
+
+            <div class="relative group md:w-11/12 lg:w-11/12 ">
+                <div aria-hidden="true" class="absolute top-0 w-full h-full rounded-2xl bg-white shadow-lg transition duration-500 group-hover:scale-105"></div>
+                <div class="relative p-6 pt-16 md:p-8 md:pl-12 md:rounded-r-2xl lg:pl-20 lg:p-16">
+                    <p class="text-3xl text-gray-700 font-semibold">What We Offer:</p>
+                    <ul role="list" class="space-y-4 py-6 px-4 mx-auto text-gray-600 text-left">
+                        <li class="space-x-2">
+                            <span class="text-orange-700 font-semibold">&check;</span>
+                            <span>MAKEUP APPLICATION</span>
+                        </li>
+                        <li class="space-x-2">
+                            <span class="text-orange-700 font-semibold">&check;</span>
+                            <span>HAIR STYLING</span>
+                        </li>
+                        <li class="space-x-2">
+                            <span class="text-orange-700 font-semibold">&check;</span>
+                            <span>HAIR EXTENSIONS</span>
+                        </li>
+                        <li class="space-x-2">
+                            <span class="text-orange-700 font-semibold">&check;</span>
+                            <span> EXCLUSIVE ACCESSORIES</span>
+                        </li>
+                    </ul>
+                    <p class="flex items-center justify-center space-x-4 text-lg text-gray-600 text-center">
+                        <span>Call us at</span>
+                        <a href="tel:+24300" class="flex space-x-2 items-center text-orange-700">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-6" viewBox="0 0 16 16">
+                                <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                            </svg>
+                            <span class="font-semibold">+1 000 000</span>
+                        </a>
+                    </p>    
+                    <!-- Correct the div tag with appropriate button attributes -->
+                    <div class="buttons flex justify-center mt-4">
+                        <button class="register-btn bg-orange-700 text-white py-3 px-6 rounded-lg mr-5 hover:bg-orange-950 transition duration-300">Book Now</button>
+                        <button class="learn-btn bg-white text-orange-900 border-2 border-orange-950 py-3 px-6 rounded-lg hover:bg-orange-900 hover:text-white transition duration-300">Learn more</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        </div>
+    </article>
+    <!--Service ends-->
+    
     <!--Call to Action-->
     <div class="bg-gray-950 text-white py-24">
         <h2 class="text-5xl font-bold text-center mb-10">Excited to work together on your next project?</h2>
@@ -166,7 +404,6 @@
         }
     </script>
 
-        
-    <script type="module" src="/src/scripts/application.js"></script>
+     
 </body>
 </html>
