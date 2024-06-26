@@ -19,12 +19,12 @@
 <body>
     <header>
         <div class="sticky">
-          <!-- Navbar -->
+            <!-- Navbar -->
             <nav class="p-5 bg-white shadow md:flex md:justify-between relative z-50">
                 <div class="flex justify-between items-center">
                     <span class="text-2xl nav-font cursor-pointer flex items-center">
-                        <img src="src/images/logo/tubaologo.jpg" alt="Logo" class="nav-logo">
-                        <a href="index.html">TUBAO MAKEUP ACADEMY</a>
+                        <img src="/src/image/logo/Tubao.png" alt="Logo" class="nav-logo">
+                        <a href="/index.html">TUBAO MAKEUP ACADEMY</a>
                     </span>
                     <span class="text-3xl cursor-pointer mx-2 md:hidden block menu-icon">
                         <ion-icon name="menu-outline" onclick="toggleMenu(this)"></ion-icon>
@@ -32,40 +32,40 @@
                 </div>
                 <ul class="nav-menu md:flex md:items-center md:static absolute bg-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px]">
                     <li class="mx-4 my-6 md:my-0">
-                        <a href="src/html/course.html" class="text-lg font-medium hover:text-yellow-800 duration-500">Introduction</a>
+                        <a href="/src/html/intro.html" class="text-lg font-medium hover:text-yellow-800 duration-500">Introduction</a>
                     </li>
                     <li class="mx-4 my-6 md:my-0 relative dropdown">
-                        <a href="src/html/course.html" class="text-lg font-medium hover:text-yellow-800 duration-500">Course</a>
+                        <a href="/src/html/course.html" class="text-lg font-medium hover:text-yellow-800 duration-500">Course</a>
                         <div class="dropdown-content py-2 rounded-md">
-                            <a href="#personal-makeup-course" class="block px-4 py-2 hover:bg-gray-100">Personal Makeup Course</a>
-                            <a href="#professional-makeup-course" class="block px-4 py-2 hover:bg-gray-100">Professional Makeup Course</a>
-                            <a href="#bridal-makeup-course" class="block px-4 py-2 hover:bg-gray-100">Bridal Makeup Course</a>
+                            <a href="/src/html/course.html#personal-makeup-course" class="block px-4 py-2 hover:bg-gray-100">Personal Makeup Course</a>
+                            <a href="/src/html/course.html#professional-makeup-course" class="block px-4 py-2 hover:bg-gray-100">Professional Makeup Course</a>
+                            <a href="/src/html/course.html#bridal-makeup-course" class="block px-4 py-2 hover:bg-gray-100">Bridal Makeup Course</a>
                         </div>
                     </li>
                     <li class="mx-4 my-6 md:my-0 relative dropdown">
-                        <a href="src/html/service.html" class="text-lg font-medium hover:text-yellow-800 duration-500">Service</a>
+                        <a href="/src/html/service.html" class="text-lg font-medium hover:text-yellow-800 duration-500">Service</a>
                         <div class="dropdown-content py- rounded-md">
-                            <a href="service.html#our-service" class="block px-4 py-2 hover:bg-gray-100">Our service</a>
-                            <a href="service.html#tutor" class="block px-4 py-2 hover:bg-gray-100">Tutor</a>
-                            <a href="service.html#student" class="block px-4 py-2 hover:bg-gray-100">Student</a>
+                            <a href="/src/html/service.html#our-service" class="block px-4 py-2 hover:bg-gray-100">Our service</a>
+                            <a href="/src/html/service.html#tutor" class="block px-4 py-2 hover:bg-gray-100">Tutor</a>
+                            <a href="/src/html/service.html#student" class="block px-4 py-2 hover:bg-gray-100">Student</a>
                         </div>
                     </li>
                     <li class="mx-4 my-6 md:my-0">
                         <a href="#" class="text-lg font-medium hover:text-yellow-800 duration-500">Library</a>
                     </li>
                     <li class="mx-4 my-6 md:my-0">
-                        <a href="src/html/blog.html" class="text-lg font-medium hover:text-yellow-800 duration-500">Blog</a>
+                        <a href="/src/html/intro" class="text-lg font-medium hover:text-yellow-800 duration-500">Blog</a>
                     </li>
                     <li class="mx-4 my-6 md:my-0">
                         <button class="bg-orange-900 text-white font-medium duration-500 px-6 py-2 hover:bg-orange-950 rounded-lg">
-                            <a href="src/html/intro.html">Contact Us</a> 
+                            <a href="/src/html/blog.html">Contact Us</a> 
                         </button>
                     </li>
                 </ul>
             </nav>
-          </div>  
         </div>
-      <header>  
+    </header>
+    
       <!--Toggle Menu start from here-->
       <script>
         function toggleMenu(icon) {
@@ -84,7 +84,7 @@
       <main>
         <div class="w-full h-400 relative bg-fixed bg-cover bg-center bg-no-repeat video-section" style="height: 470px;">
             <video class="h-full w-full object-cover rounded-lg" autoplay muted loop>
-                <source src="src/video/Dior Forever - The Iconic Clean Foundation.mp4" type="video/mp4" />
+                <source src="/src/image/Dior Forever - The Iconic Clean Foundation.mp4" type="video/mp4"/>
                 Your browser does not support the video tag.
             </video>
             <div class="absolute inset-0 flex items-center justify-center h-full bg-black bg-opacity-50">
@@ -100,19 +100,19 @@
 
   
     <!-- Section for Courses -->
-    <section class="section">
+    <article class="section">
         <div class="top-collections">Our Courses</div>
         <div class="divider">
             <div class="best-offers">BEST OFFERS</div>
         </div>
-
+    </article>    
 
 
     <!-- Main Section for Personal Makeup Course -->
-    <main id="personal-makeup-course" class="container mx-auto py-16">
+    <article id="personal-makeup-course" class="container mx-auto py-16">
       <div class="relative-container">
         <div class="image-wrapper image-wrapper-left">
-          <img src="src/images/personal-makeup-course.webp" alt="Makeup Image" class="rounded-2xl shadow-lg" style="width: 750px; height: 450px;">
+          <img src="/src/image/coursepage/personal-makeup-course.webp" alt="Makeup Image" class="rounded-2xl shadow-lg" style="width: 750px; height: 450px;">
           <div class="overlay-card overlay-card-right">
             <div class="max-w-lg p-5 flex flex-col justify-center relative overflow-hidden">
               <div class="max-w-7xl mx-auto">
@@ -134,13 +134,13 @@
           </div>
         </div>
       </div>
-    </main> <!-- End Main Section for Personal Makeup Course -->
+    </article> <!-- End Main Section for Personal Makeup Course -->
 
     <!-- Main Section for Professional Makeup Course -->
-    <main id="professional-makeup-course" class="container mx-auto py-16">
+    <article id="professional-makeup-course" class="container mx-auto py-16">
         <div class="relative-container">
             <div class="image-wrapper image-wrapper-right">
-                <img src="src/image/coursepage/personal-makeup-course.webp" alt="Makeup Image" class="rounded-2xl shadow-lg" style="width: 750px; height: 450px;">
+                <img src="/src/image/coursepage/professional-makeup-course.webp" alt="Makeup Image" class="rounded-2xl shadow-lg" style="width: 750px; height: 450px;">
                 <div class="overlay-card overlay-card-left">
                     <div class="max-w-lg p-5 flex flex-col justify-center relative overflow-hidden">
                         <div class="max-w-lg mx-auto">
@@ -163,14 +163,14 @@
                 </div>
             </div>
         </div>
-    </main>
+    </article>
     <!-- End Main Section for Professional Makeup Course -->
 
     <!-- Main Section for Bridal Makeup Course -->
-    <main id="bridal-makeup-course" class="container mx-auto py-16">
+    <article id="bridal-makeup-course" class="container mx-auto py-16">
         <div class="relative-container">
             <div class="image-wrapper image-wrapper-left">
-                <img src="src/image/coursepage/bridal-makeup-course.jpg" alt="Makeup Image" class="rounded-2xl shadow-lg" style="width: 750px; height: 450px;">
+                <img src="/src/image/coursepage/bridal-makeup-course.jpg" alt="Makeup Image" class="rounded-2xl shadow-lg" style="width: 750px; height: 450px;">
                 <div class="overlay-card overlay-card-right">
                     <div class="max-w-lg p-5 flex flex-col justify-center relative overflow-hidden">
                         <div class="max-w-7xl mx-auto">
@@ -193,36 +193,38 @@
                 </div>
             </div>
         </div>
-    </main> <!-- End Main Section for Bridal Makeup Course -->
-
+    </article> <!-- End Main Section for Bridal Makeup Course -->
+    
 
     <!-- Founder's Quote -->
     <section class="relative py-20 overflow-hidden bg-gradient-to-br from-black via-black to-black shadow sm:py-24 md:py-24">
         <div class="relative max-w-6xl px-16 mx-auto xl:px-0">
-            <svg class="absolute top-0 left-0 hidden w-32 h-32 -mt-3 -ml-16 text-rose-400 opacity-50 xl:block" stroke="currentColor" fill="none" viewBox="0 0 144 144">
-                <path stroke-width="2" d="M41.485 15C17.753 31.753 1 59.208 1 89.455c0 24.664 14.891 39.09 32.109 39.09 16.287 0 28.386-13.03 28.386-28.387 0-15.356-10.703-26.524-24.663-26.524-2.792 0-6.515.465-7.446.93 2.327-15.821 17.218-34.435 32.11-43.742L41.485 15zm80.04 0c-23.268 16.753-40.02 44.208-40.02 74.455 0 24.664 14.891 39.09 32.109 39.09 15.822 0 28.386-13.03 28.386-28.387 0-15.356-11.168-26.524-25.129-26.524-2.792 0-6.049.465-6.98.93 2.327-15.821 16.753-34.435 31.644-43.742L121.525 15z"></path>
-            </svg>
-            <div class="relative xl:pl-32 lg:flex lg:items-center">
-                <div class="relative">
-                    <blockquote class="relative">
-                    <div class="text-xl font-bold leading-9 tracking text-white md:text-3xl">
-                        <p class="">We’ve helped 4000+ students start their own successful makeup businesses and land jobs with high-end brands like MAC, Fenty, and Sephora!<br><span class="font-extrabold text-transparent text-5xl bg-clip-text bg-gradient-to-r from-orange-500 via-yellow-300 to-red-600">reaching millions of followers</span></p>
-                    </div>
-                    <div class="mt-4">
-                        <div class="flex items-center">
-                            <div class="flex-shrink-0"><img class="object-cover w-24 h-24 border-cyan-200 border-2 mr-4 rounded-full" src="https://i.pinimg.com/474x/1e/3e/fb/1e3efb65befb855920bb118c462fa9a9.jpg" alt="Cameron Joe"></div>
-                            <div class="ml-4 lg:ml-0">
-                            <div class="text-base font-medium leading-6 text-white">Joe Cameron - TuBao Makeup's Founder</div>
-                            <div class="flex items-center"></div>
-                        </div>
-                    </div>
+          <svg class="absolute top-0 left-0 hidden w-32 h-32 -mt-3 -ml-16 text-rose-400 opacity-50 xl:block" stroke="currentColor" fill="none" viewBox="0 0 144 144">
+            <path stroke-width="2" d="M41.485 15C17.753 31.753 1 59.208 1 89.455c0 24.664 14.891 39.09 32.109 39.09 16.287 0 28.386-13.03 28.386-28.387 0-15.356-10.703-26.524-24.663-26.524-2.792 0-6.515.465-7.446.93 2.327-15.821 17.218-34.435 32.11-43.742L41.485 15zm80.04 0c-23.268 16.753-40.02 44.208-40.02 74.455 0 24.664 14.891 39.09 32.109 39.09 15.822 0 28.386-13.03 28.386-28.387 0-15.356-11.168-26.524-25.129-26.524-2.792 0-6.049.465-6.98.93 2.327-15.821 16.753-34.435 31.644-43.742L121.525 15z"></path>
+          </svg>
+          <div class="relative xl:pl-32 lg:flex lg:items-center">
+            <div class="relative">
+              <blockquote class="relative">
+                <div class="text-3x1 font-bold leading-9 tracking text-white md:text-3xl">
+                  <p class="">We’ve helped 4000+ students start their own successful makeup businesses and land jobs with high-end brands like MAC, Fenty, and Sephora!<br><span class="font-extrabold text-transparent text-5xl bg-clip-text bg-gradient-to-r from-orange-500 via-yellow-300 to-red-600">reaching millions of followers</span></p>
                 </div>
-            </blockquote>
+                <div class="mt-4">
+                  <div class="flex items-center">
+                    <div class="flex-shrink-0"><img class="object-cover w-24 h-24 border-cyan-200 border-2 mr-4 rounded-full" src="https://i.pinimg.com/474x/1e/3e/fb/1e3efb65befb855920bb118c462fa9a9.jpg" alt="Cameron Joe">
+                    </div>
+                    <div class="ml-4 lg:ml-0">
+                      <div class="text-base font-medium leading-6 text-white">Joe Cameron - TuBao Makeup's Founder</div>
+                      <div class="flex items-center">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </blockquote>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-  <!--founder quote-->
+      </section>
+    <!--founder quote-->
    
   
         <!-- JavaScript function to scroll to the section -->
