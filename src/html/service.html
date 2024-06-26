@@ -12,7 +12,10 @@
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,900&display=swap" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script type="module" src="/src/scripts/smoothscroll.js"></script>
     <link rel="stylesheet" href="src/css/serivce.css">
+    <link rel="stylesheet" href="src/css/style.css">
+    <script type="module" src="/src/scripts/service.js"></script>
     <title>Tu Bao Makeup Services</title>
 </head>
 <body>
@@ -53,35 +56,24 @@
                         <a href="#" class="text-lg font-medium hover:text-yellow-800 duration-500">Library</a>
                     </li>
                     <li class="mx-4 my-6 md:my-0">
-                        <a href="/src/html/intro" class="text-lg font-medium hover:text-yellow-800 duration-500">Blog</a>
+                        <a href="/src/html/blog.html" class="text-lg font-medium hover:text-yellow-800 duration-500">Blog</a>
                     </li>
                     <li class="mx-4 my-6 md:my-0">
                         <button class="bg-orange-900 text-white font-medium duration-500 px-6 py-2 hover:bg-orange-950 rounded-lg">
-                            <a href="/src/html/blog.html">Contact Us</a> 
+                            <a href="/src/html/form.html">Contact Us</a> 
                         </button>
                     </li>
                 </ul>
             </nav>
         </div>
     </header> 
-    <!--Toggle Menu start from here-->
-    <script>
-        function toggleMenu(icon) {
-            let menu = document.querySelector('.nav-menu');
-            icon.name = icon.name === 'menu-outline' ? 'close-outline' : 'menu-outline';
-            menu.classList.toggle('top-[-400px]');
-            menu.classList.toggle('opacity-0');
-            menu.classList.toggle('top-[70px]');
-            menu.classList.toggle('opacity-100');
-        }
-    </script>
-    <!--Toggle Menu end here-->
+
 
     <!-- Video Background Section -->
     <main>
         <div class="w-full h-400 relative bg-fixed bg-cover bg-center bg-no-repeat video-section" style="height: 470px;">
             <video class="h-full w-full object-cover rounded-lg" autoplay muted loop>
-                <source src="src/video/Dior Forever - The Iconic Clean Foundation.mp4" type="video/mp4" />
+                <source src="/src/image/Dior Forever - The Iconic Clean Foundation.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
             </video>
             <div class="absolute inset-0 flex items-center justify-center h-full bg-black bg-opacity-50">
@@ -412,8 +404,6 @@
         }
     </script>
 
-    <script type="module" src="src/scripts/smoothscroll.js"></script>
      
-    <script type="module" src="/src/scripts/application.js"></script>
 </body>
 </html>
