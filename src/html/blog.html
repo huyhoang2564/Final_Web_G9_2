@@ -12,17 +12,18 @@
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,900&display=swap" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="src/css/blog.css">
     <title>Tu Bao Makeup Blog</title>
 </head>
 <body>
-    <!-- Navbar -->
-    <div class="sticky">
-        <div class="bg-gray-100">
-            <nav class="p-5 bg-white shadow md:flex md:justify-between">
+    <header>
+        <div class="sticky">
+            <!-- Navbar -->
+            <nav class="p-5 bg-white shadow md:flex md:justify-between relative z-50">
                 <div class="flex justify-between items-center">
                     <span class="text-2xl nav-font cursor-pointer flex items-center">
-                        <img src="src/image/logo/tubaologo.png" alt="Logo" class="nav-logo">
-                        TUBAO MAKEUP ACADEMY
+                        <img src="/src/image/logo/Tubao.png" alt="Logo" class="nav-logo">
+                        <a href="/index.html">TUBAO MAKEUP ACADEMY</a>
                     </span>
                     <span class="text-3xl cursor-pointer mx-2 md:hidden block menu-icon">
                         <ion-icon name="menu-outline" onclick="toggleMenu(this)"></ion-icon>
@@ -30,44 +31,46 @@
                 </div>
                 <ul class="nav-menu md:flex md:items-center md:static absolute bg-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px]">
                     <li class="mx-4 my-6 md:my-0">
-                        <a href="src/html/intro.html" class="text-lg font-medium hover:text-yellow-800 duration-500">Introduction</a>
+                        <a href="/src/html/intro.html" class="text-lg font-medium hover:text-yellow-800 duration-500">Introduction</a>
                     </li>
                     <li class="mx-4 my-6 md:my-0 relative dropdown">
-                        <a href="src/html/course.html" class="text-lg font-medium hover:text-yellow-800 duration-500">Course</a>
+                        <a href="/src/html/course.html" class="text-lg font-medium hover:text-yellow-800 duration-500">Course</a>
                         <div class="dropdown-content py-2 rounded-md">
-                            <a href="#" class="block px-4 py-2 hover:bg-gray-100">Personal Make Up Course</a>
-                            <a href="#" class="block px-4 py-2 hover:bg-gray-100">Professional Make Up Course</a>
-                            <a href="#" class="block px-4 py-2 hover:bg-gray-100">Bridal Make Up Course</a>
+                            <a href="/src/html/course.html#personal-makeup-course" class="block px-4 py-2 hover:bg-gray-100">Personal Makeup Course</a>
+                            <a href="/src/html/course.html#professional-makeup-course" class="block px-4 py-2 hover:bg-gray-100">Professional Makeup Course</a>
+                            <a href="/src/html/course.html#bridal-makeup-course" class="block px-4 py-2 hover:bg-gray-100">Bridal Makeup Course</a>
                         </div>
                     </li>
                     <li class="mx-4 my-6 md:my-0 relative dropdown">
-                        <a href="src/html/service.html" class="text-lg font-medium hover:text-yellow-800 duration-500">Service</a>
+                        <a href="/src/html/service.html" class="text-lg font-medium hover:text-yellow-800 duration-500">Service</a>
                         <div class="dropdown-content py- rounded-md">
-                            <a href="#" class="block px-4 py-2 hover:bg-gray-100">Party Make Up Service </a>
-                            <a href="#" class="block px-4 py-2 hover:bg-gray-100">Bridal Make Up Service </a>
-                            <a href="#" class="block px-4 py-2 hover:bg-gray-100">Ceremony Make Up Service </a>
+                            <a href="/src/html/service.html#our-service" class="block px-4 py-2 hover:bg-gray-100">Our service</a>
+                            <a href="/src/html/service.html#tutor" class="block px-4 py-2 hover:bg-gray-100">Tutor</a>
+                            <a href="/src/html/service.html#student" class="block px-4 py-2 hover:bg-gray-100">Student</a>
                         </div>
                     </li>
                     <li class="mx-4 my-6 md:my-0">
                         <a href="#" class="text-lg font-medium hover:text-yellow-800 duration-500">Library</a>
                     </li>
                     <li class="mx-4 my-6 md:my-0">
-                        <a href="src/html/blog.html" class="text-lg font-medium hover:text-yellow-800 duration-500">Blog</a>
+                        <a href="/src/html/intro" class="text-lg font-medium hover:text-yellow-800 duration-500">Blog</a>
                     </li>
                     <li class="mx-4 my-6 md:my-0">
                         <button class="bg-orange-900 text-white font-medium duration-500 px-6 py-2 hover:bg-orange-950 rounded-lg">
-                            <a href="src/html/intro.html">Contact us</a>
+                            <a href="/src/html/blog.html">Contact Us</a> 
                         </button>
                     </li>
                 </ul>
             </nav>
         </div>
-    </div>
+    </header>
+    
+
 
     <!-- Video Background Section -->
     <div class="video-section">
         <video autoplay muted loop id="backgroundVideo">
-            <source src="src/image/blog/Spectacular Glow by Dior Forever.mp4" type="video/mp4" />
+            <source src="src/css/video/Spectacular Glow by Dior Forever.mp4" type="video/mp4" />
             Your browser does not support the video tag.
         </video>
         <div class="overlay">
@@ -77,8 +80,125 @@
     </div>
 
 
+    <!-- Background Section -->
+    <section class="bg-section">
+        <main class="container-custom mt-10">
+            <div class="flex justify-center outer-card bg-section">
+                <div class="inner-card">
+                    <div class="flex items-center mb-4">
+                        <span class="category-badge px-2 py-1 rounded text-sm">Category</span>
+                        <span class="ml-4 text-sm text-gray-500">Jan 24, 2024</span>
+                    </div>
+                    <h2 class="text-xl font-bold text-gray-700">Makeup Courses Overview: Learn the Art of Beauty</h2>
+                    <p class="mt-2 text-gray-600">
+                        Discover our comprehensive makeup courses designed for all skill levels. Whether you're a beginner or an aspiring professional, we've got the perfect course for you.
+                    </p>
+                    <a href="#" class="mt-2 inline-block text-custom btn">Read more &rarr;</a>
+                </div>
+                <div class="image-placeholder">
+                    <img src="https://media.istockphoto.com/id/1316127257/vi/anh/b%E1%BB%99-b%C3%A0n-ch%E1%BA%A3i-m%E1%BB%B9-ph%E1%BA%A9m.jpg?s=612x612&w=0&k=20&c=53VVX41rEVph9cnVVz9ZT0FkgZtiRW7AtbZeAqSJLjU=" alt="Image Placeholder">
+                </div>
+            </div>
+            <div class="flex justify-between items-center mt-10">
+                <h2 class="text-3xl font-bold text-left text-gray-700 latest-articles-title">Latest articles</h2>
+                <div class="flex flex-wrap">
+                    <span class="category-badge px-2 py-1 rounded text-sm mx-2">Makeup Tutorials</span>
+                    <span class="category-badge px-2 py-1 rounded text-sm mx-2">Beauty Trends</span>
+                    <span class="category-badge px-2 py-1 rounded text-sm mx-2">Lifestyle</span>
+                    <span class="category-badge px-2 py-1 rounded text-sm mx-2">Events and Workshops</span>
+                </div>
+            </div>
+            <div class="grid grid-cols-2 gap-4 mt-10 lg:grid-cols-3">
+                <a href="nhápnews.html" class="block content-card p-2 rounded-lg latest-article-card">
+                    <div class="latest-article-image">
+                        <img src="https://www.makeup.com/-/media/project/loreal/brand-sites/mdc/americas/us/articles/2023/02-february/17-underpainting/underpainting-makeup-how-to-hero-mudc-021723.jpg?cx=0.5&cy=0.5&cw=705&ch=529&blr=False&hash=F42D4331341286F349B91323C6B2498E" alt="Article Image">
+                    </div>
+                    <div class="flex items-center mt-2 mb-2">
+                        <span class="category-badge px-2 py-1 rounded text-sm">Active</span>
+                        <span class="ml-4 text-sm text-gray-500">Jan 14, 2024</span>
+                    </div>
+                    <h3 class="font-bold text-gray-700">Beginner's Makeup Course: Start Your Journey</h3>
+                    <p class="mt-2 text-left text-gray-600">
+                        Our beginner-friendly makeup course is perfect for those new to the world of beauty. We'll guide you through the basics of makeup application, product knowledge, and essential techniques.
+                    </p>
+                <a<a href="#" class="mt-2 inline-block text-custom btn">Read more &rarr;</a>
+                <div class="content-card p-2 rounded-lg latest-article-card">
+                    <div class="latest-article-image">
+                        <img src="https://images.unsplash.com/photo-1611826585949-b0ccabd2c1a4?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fG1ha2V1cHxlbnwwfHwwfHx8MA%3D%3D" alt="Article Image">
+                    </div>
+                    <div class="flex items-center mt-2 mb-2">
+                        <span class="category-badge px-2 py-1 rounded text-sm">Active</span>
+                        <span class="ml-4 text-sm text-gray-500">Jan 10, 2024</span>
+                    </div>
+                    <h3 class="font-bold text-gray-700">Advanced Makeup Techniques: Elevate Your Skills</h3>
+                    <p class="mt-2 text-left text-gray-600">
+                        This advanced course is designed for those who want to take their makeup skills to the next level. We'll cover more complex techniques, special effects makeup, and professional application tips.
+                    </p>
+                    <a href="#" class="mt-2 inline-block text-custom btn">Read more &rarr;</a>
+                </div>
+                <div class="content-card p-2 rounded-lg latest-article-card">
+                    <div class="latest-article-image">
+                        <img src="https://www.makeup.com/-/media/project/loreal/brand-sites/mdc/americas/us/articles/2024/05-may/breakdown-of-foundation-ingredients/mdc_foundation_may_banner.jpg?cx=0.49&cy=0.54&cw=705&ch=529&blr=False&hash=1C76DFEBE9F48E7C74898C9558DA46F1" alt="Article Image">
+                    </div>
+                    <div class="flex items-center mt-2 mb-2">
+                        <span class="category-badge px-2 py-1 rounded text-sm">Active</span>
+                        <span class="ml-4 text-sm text-gray-500">Jan 20, 2024</span>
+                    </div>
+                    <h3 class="font-bold text-gray-700">Special Effects Makeup: Transform Your Art</h3>
+                    <p class="mt-2 text-left text-gray-600">
+                        Learn the art of special effects makeup and create stunning looks for film, theater, and cosplay. We'll cover techniques for creating realistic wounds, scars, and other special effects.
+                    </p>
+                    <a href="#" class="mt-2 inline-block text-custom btn">Read more &rarr;</a>
+                </div>
+                <div class="content-card p-2 rounded-lg latest-article-card">
+                    <div class="latest-article-image">
+                        <img src="https://media.istockphoto.com/id/1055662010/vi/anh/ng%C6%B0%E1%BB%9Di-ph%E1%BB%A5-n%E1%BB%AF-xinh-%C4%91%E1%BA%B9p-vui-v%E1%BA%BB.jpg?s=612x612&w=0&k=20&c=tOruCCL0flRS-uQJ9XDZqZXiTg6B_MKCCg_EQDrepEI=" alt="Article Image">
+                    </div>
+                    <div class="flex items-center mt-2 mb-2">
+                        <span class="category-badge px-2 py-1 rounded text-sm">Active</span>
+                        <span class="ml-4 text-sm text-gray-500">Jan 14, 2024</span>
+                    </div>
+                    <h3 class="font-bold text-gray-700">Personal Makeup Sessions: Tailored to You</h3>
+                    <p class="mt-2 text-left text-gray-600">
+                        Book a personalized makeup session with one of our experienced makeup artists. We'll create a look that enhances your natural beauty and makes you feel confident and radiant.
+                    </p>
+                    <a href="#" class="mt-2 inline-block text-custom btn">Read more &rarr;</a>
+                </div>
+                <div class="content-card p-2 rounded-lg latest-article-card">
+                    <div class="latest-article-image">
+                        <img src="https://academy.makeupforever.com/int/uploads/media/images/news/254-x-302-decouvrezmufe.png" alt="Article Image">
+                    </div>
+                    <div class="flex items-center mt-2 mb-2">
+                        <span class="category-badge px-2 py-1 rounded text-sm">Active</span>
+                        <span class="ml-4 text-sm text-gray-500">Jan 16, 2024</span>
+                    </div>
+                    <h3 class="font-bold text-gray-700">Group Make-Up Workshops: Learn and Connect</h3>
+                    <p class="mt-2 text-left text-gray-600">
+                        Join a group makeup workshop and learn from experienced instructors. You'll get hands-on practice, network with other beauty enthusiasts, and discover new techniques and trends.
+                    </p>
+                    <a href="#" class="mt-2 inline-block text-custom btn">Read more &rarr;</a>
+                </div>
+                <div class="content-card p-2 rounded-lg latest-article-card">
+                    <div class="latest-article-image">
+                        <img src="https://cdn.shopify.com/s/files/1/0255/5904/0072/files/231116_NP_Services_Shot_16_Academy_1152_copy.jpg?v=1701672297" alt="Article Image">
+                    </div>
+                    <div class="flex items-center mt-2 mb-2">
+                        <span class="category-badge px-2 py-1 rounded text-sm">Active</span>
+                        <span class="ml-4 text-sm text-gray-500">Jan 14, 2024</span>
+                    </div>
+                    <h3 class="font-bold text-gray-700">8-Week Professional Makeup Artistry Course</h3>
+                    <p class="mt-2 text-left text-gray-600">
+                        This course will provide you with the knowledge and hands-on makeup techniques required for special occasion makeup including bridal, editorial and runway makeup.
+                    </p>
+                    <a href="#" class="mt-2 inline-block text-custom btn">Read more &rarr;</a>
+                </div>
+            </div>
+        </main>
+    </section>        
+
+
     <!--Call to Action-->
-    <div class="bg-gray-950 text-white py-24">
+    <div class="bg-gray-950 text-white py-24 mt-20">
         <h2 class="text-5xl font-bold text-center mb-10">Excited to work together on your next project?</h2>
         <div class="flex justify-center space-x-4">
             <button class="bg-gray-800 border hover:bg-gray-600 px-6 py-3 rounded-lg btn">&larr; Learn more</button>
@@ -96,7 +216,7 @@
                     <div class="flex justify-between items-center">
                         <div class="text-2xl foot-font cursor-pointer flex items-center">
                             <a href="index.html" class="flex justify-center lg:justify-start items-center">
-                                <img src="src/image/logo/tubaologo.png" alt="Tubao Makeup" class="foot-logo items-center mr-2">
+                                <img src="/src/image/logo/tubaologo.png" alt="Tubao Makeup" class="foot-logo items-center mr-2">
                                 TuBao Makeup Academy
                             </a>
                         </div>
