@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="/src/css/blog.css">
     <script type="module" src="/src/scripts/blog.js"></script>
     <title>Tu Bao Makeup Blog</title>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LEDDYFYFQB"></script>
 </head>
 <body>
     <header>
@@ -110,7 +112,7 @@
                 </div>
             </div>
             <div class="grid grid-cols-2 gap-4 mt-10 lg:grid-cols-3">
-                <a href="nhápnews.html" class="block content-card p-2 rounded-lg latest-article-card">
+                <a href="src/html/news.html" class="block content-card p-2 rounded-lg latest-article-card">
                     <div class="latest-article-image">
                         <img src="https://www.makeup.com/-/media/project/loreal/brand-sites/mdc/americas/us/articles/2023/02-february/17-underpainting/underpainting-makeup-how-to-hero-mudc-021723.jpg?cx=0.5&cy=0.5&cw=705&ch=529&blr=False&hash=F42D4331341286F349B91323C6B2498E" alt="Article Image">
                     </div>
@@ -217,7 +219,7 @@
                     <div class="flex justify-between items-center">
                         <div class="text-2xl foot-font cursor-pointer flex items-center">
                             <a href="index.html" class="flex justify-center lg:justify-start items-center">
-                                <img src="/src/image/logo/tubaologo.png" alt="Tubao Makeup" class="foot-logo items-center mr-2">
+                                <img src="src/image/logo/tubaologo.png" alt="Tubao Makeup" class="foot-logo items-center mr-2">
                                 TuBao Makeup Academy
                             </a>
                         </div>
@@ -298,6 +300,18 @@
             menu.classList.toggle('opacity-100');
         }
     </script>
+
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-LEDDYFYFQB');
+    </script>
+
+    <script type="module" src="/src/scripts/application.js"></script>
+
+
 
         
 </body>
