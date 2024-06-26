@@ -12,18 +12,18 @@
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,900&display=swap" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="src/css/home.css">
+    <link rel="stylesheet" href="/src/css/home.css">
+    <script type="module" src="/src/scripts/home.js"></script>
     <title>Tu Bao Makeup Academy</title>
 
 </head>
 <body>
-    <!-- Navbar -->
     <div class="sticky">
         <div class="bg-gray-100">
             <nav class="p-5 bg-white shadow md:flex md:justify-between">
                 <div class="flex justify-between items-center">
                     <span class="text-2xl nav-font cursor-pointer flex items-center">
-                        <img src="src/image/logo/tubaologo.png" alt="Logo" class="nav-logo">
+                        <img src="/src/image/logo/tubaologo.png" alt="Logo" class="nav-logo">
                         TUBAO MAKEUP ACADEMY
                     </span>
                     <span class="text-3xl cursor-pointer mx-2 md:hidden block menu-icon">
@@ -32,39 +32,40 @@
                 </div>
                 <ul class="nav-menu md:flex md:items-center md:static absolute bg-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px]">
                     <li class="mx-4 my-6 md:my-0">
-                        <a href="src/html/intro.html" class="text-lg font-medium hover:text-yellow-800 duration-500">Introduction</a>
+                        <a href="/src/html/intro.html" class="text-lg font-medium hover:text-yellow-800 duration-500">Introduction</a>
                     </li>
                     <li class="mx-4 my-6 md:my-0 relative dropdown">
-                        <a href="src/html/course.html" class="text-lg font-medium hover:text-yellow-800 duration-500">Course</a>
+                        <a href="/src/html/course.html" class="text-lg font-medium hover:text-yellow-800 duration-500">Course</a>
                         <div class="dropdown-content py-2 rounded-md">
-                            <a href="#" class="block px-4 py-2 hover:bg-gray-100">Personal Make Up Course</a>
-                            <a href="#" class="block px-4 py-2 hover:bg-gray-100">Professional Make Up Course</a>
-                            <a href="#" class="block px-4 py-2 hover:bg-gray-100">Bridal Make Up Course</a>
+                            <a href="/src/html/course.html#personal-makeup-course" class="block px-4 py-2 hover:bg-gray-100">Personal Makeup Course</a>
+                            <a href="/src/html/course.html#professional-makeup-course" class="block px-4 py-2 hover:bg-gray-100">Professional Makeup Course</a>
+                            <a href="/src/html/course.html#bridal-makeup-course" class="block px-4 py-2 hover:bg-gray-100">Bridal Makeup Course</a>
                         </div>
                     </li>
                     <li class="mx-4 my-6 md:my-0 relative dropdown">
-                        <a href="src/html/service.html" class="text-lg font-medium hover:text-yellow-800 duration-500">Service</a>
-                        <div class="dropdown-content py- rounded-md">
-                            <a href="#" class="block px-4 py-2 hover:bg-gray-100">Party Makeup Service </a>
-                            <a href="#" class="block px-4 py-2 hover:bg-gray-100">Bridal Make up Service </a>
-                            <a href="#" class="block px-4 py-2 hover:bg-gray-100">Ceremony Makeup Service </a>
+                        <a href="/src/html/service.html" class="text-lg font-medium hover:text-yellow-800 duration-500">Service</a>
+                        <div class="dropdown-content py-2 rounded-md">
+                            <a href="/src/html/service.html#our-service" class="block px-4 py-2 hover:bg-gray-100">Our Service</a>
+                            <a href="/src/html/service.html#tutor" class="block px-4 py-2 hover:bg-gray-100">Tutor</a>
+                            <a href="/src/html/service.html#student" class="block px-4 py-2 hover:bg-gray-100">Student</a>
                         </div>
                     </li>
                     <li class="mx-4 my-6 md:my-0">
                         <a href="#" class="text-lg font-medium hover:text-yellow-800 duration-500">Library</a>
                     </li>
                     <li class="mx-4 my-6 md:my-0">
-                        <a href="src/html/blog.html" class="text-lg font-medium hover:text-yellow-800 duration-500">Blog</a>
+                        <a href="/src/html/blog.html" class="text-lg font-medium hover:text-yellow-800 duration-500">Blog</a>
                     </li>
                     <li class="mx-4 my-6 md:my-0">
                         <button class="bg-orange-900 text-white font-medium duration-500 px-6 py-2 hover:bg-orange-950 rounded-lg">
-                            <a href="src/html/intro.html">Contact us</a>
+                            <a href="/src/html/form.html">Contact Us</a>
                         </button>
                     </li>
                 </ul>
             </nav>
         </div>
     </div>
+    
 
     <!--Header - Homepage-->
     <div class="bg-gray-100 ">
@@ -92,7 +93,7 @@
                     <!-- Col 2 -->
                     <div class="hidden w-56 items-center space-y-3 md:mt-36 lg:flex">
                         <div class="overflow-hidden rounded-lg transition-transform hover-scale">
-                            <img class="h-full w-full object-contain" src="src/image/homepage/headerhome1.jpg" alt="" />
+                            <img class="h-full w-full object-contain" src="/src/image/homepage/headerhome1.jpg" alt="hihi" />
                         </div>
                     </div>
                     <div class="my-auto flex space-x-3 rounded-xl md:mt-36 md:w-60 md:flex-col md:space-y-3 md:space-x-0 md:px-4">
@@ -200,7 +201,7 @@
                 <!--Card 1 - Party Make up Service-->
                 <div class="relative flex flex-col mt-6 text-gray-700 bg-white shadow-md bg-clip-border rounded-xl transition-all hover:shadow-custom">
                     <div class="relative h-64 mx-4 -mt-6 overflow-hidden text-white shadow-lg bg-clip-border rounded-xl shadow-blue-gray-500/40 ">
-                        <img class="card-img w-full h-full object-cover object-top" src="src/image/homepage/service1.jpg" alt="Party Makeup Service">
+                        <img class="card-img w-full h-full object-cover object-top" src="/src/image/homepage/service1.jpg" alt="Party Makeup Service">
                     </div>
                     <div class="p-6">
                         <h5 class="block mb-2 font-sans text-xl text-center antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
@@ -265,8 +266,8 @@
             </div>
             <!--Link to the next page-->
             <div class="mt-16 text-center">
-                <a href="src/html/service.html" class="inline-block btn-secondary py-3 px-8 rounded-lg font-bold transition duration-300 hover:bg-gray-300">See all</a>
-                <a href="form.html" class="inline-block btn py-3 px-8 rounded-lg font-bold transition duration-300 hover:bg-orange-950 ml-4">Contact us</a>
+                <a href="/src/html/service.html" class="inline-block btn-secondary py-3 px-8 rounded-lg font-bold transition duration-300 hover:bg-gray-300">See all</a>
+                <a href="/src/html/blog.html" class="inline-block btn py-3 px-8 rounded-lg font-bold transition duration-300 hover:bg-orange-950 ml-4">Contact us</a>
             </div>
         </div>
     </main>
@@ -651,7 +652,6 @@
     </script>
 
         
-    <script type="module" src="/src/scripts/application.js"></script>
 
    
 </body>
