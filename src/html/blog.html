@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="apple-touch-icon" sizes="180x180" href="src/image/logo/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="src/image/logo/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="src/image/logo/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/src/image/logo/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/src/image/logo/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/src/image/logo/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
     <script src="https://cdn.tailwindcss.com"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
@@ -25,7 +25,7 @@
             <nav class="p-5 bg-white shadow md:flex md:justify-between relative z-50">
                 <div class="flex justify-between items-center">
                     <span class="text-2xl nav-font cursor-pointer flex items-center">
-                        <img src="/src/image/logo/Tubao.png" alt="Logo" class="nav-logo">
+                        <img src="/src/image/logo/Tubao.png" alt="Logo" class="nav-logo w-12 h-auto">
                         <a href="/index.html">TUBAO MAKEUP ACADEMY</a>
                     </span>
                     <span class="text-3xl cursor-pointer mx-2 md:hidden block menu-icon">
@@ -64,6 +64,18 @@
                 </ul>
             </nav>
         </div>
+        <!--Toggle Menu start from here-->
+        <script>
+            function toggleMenu(icon) {
+                let menu = document.querySelector('.nav-menu');
+                icon.name = icon.name === 'menu-outline' ? 'close-outline' : 'menu-outline';
+                menu.classList.toggle('top-[-400px]');
+                menu.classList.toggle('opacity-0');
+                menu.classList.toggle('top-[70px]');
+                menu.classList.toggle('opacity-100');
+            }
+        </script>
+    <!--Toggle Menu end here-->         
         <!--Open Contact Us form-->  
         <script>
             function openModal() {
