@@ -6,11 +6,11 @@ export default defineConfig({
         rollupOptions: {
             input: {
                 main: 'index.html',
-                blog: 'src/html/blog.html',
-                course: 'src/html/course.html',
-                intro: 'src/html/intro.html',
-                news: 'src/html/news.html',
-                service: 'src/html/service.html',
+                blog: 'blog.html',
+                course: 'course.html',
+                intro: 'intro.html',
+                news: 'news.html',
+                service: 'service.html',
             }
         }
     }
