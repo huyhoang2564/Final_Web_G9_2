@@ -63,7 +63,7 @@ body, html {
 :root {
 --mdc-font-family-default-primary: 'Open Sans';
 --mdc-font-weight-light: 300;
---nav-hover-color: #c98b8b;
+--nav-hover-color: #761a04;
 }
 
 
@@ -81,7 +81,6 @@ padding: 50px 0;
 .top-collections {
 font-size: 4rem;
 color: var(--nav-hover-color);
-margin-bottom: 6px;
 }
 
 .best-offers {
@@ -106,86 +105,22 @@ border-bottom: 1px solid var(--nav-hover-color);
 margin: 0 20px;
 }
 
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: black;
+    margin-top: 0.5rem;
+    position: relative;
+    display: inline-block;
+}
+
 .relative-container {
 position: relative;
 display: flex;
 justify-content: center;
 align-items: center;
 overflow: hidden; /* Ensure overflow doesn't cause layout issues */
-}
-
-.image-wrapper {
-position: relative;
-max-width: 100%; /* Ensure the image doesn't exceed its container */
-padding: 1rem; /* Example padding */
-border-radius: 1.5rem; /* Example border radius */
-}
-
-.image-wrapper img {
-border-radius: inherit; /* Inherit border radius from parent */
-transition: transform 0.5s ease;
-}
-
-.image-wrapper img:hover {
-transform: scale(1.05); /* Enlarge on hover */
-}
-
-.image-wrapper-left {
-  position: relative;
-  left: -10%;
-  }
-
-.image-wrapper-right {
-  position: relative;
-  right: -10%;
-}
-/* Card */
-.overlay-card {
-position: absolute;
-top: 50%;
-transform: translateY(-50%);
-transition: transform 0.3s, box-shadow 0.3s, opacity 0.3s;
-}
-.overlay-card .relative {
-border-radius: 1.5rem; /* More rounded corners for the card */
-transition: all 0.3s ease;
-}
-
-.overlay-card .relative:hover {
-box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Subtle shadow effect on hover */
-}
-.overlay-card-left {
-left: -35%; /* Adjust position for larger screens */
-right: auto; /* Reset right position */
-}
-
-.overlay-card-right {
-right: -30%; /* Adjust position for larger screens */
-left: auto; /* Reset left position */
-}
-
-
-/* Media query for smaller screens */
-@media (max-width: 768px) {
-
-.overlay-card-left{
-left: -20%; /* Adjust position for smaller screens */
-right: auto; /* Reset right position */
-width: 70%; /* Adjust width as needed */
-max-width: 600px; /* Limit maximum width */
-}
-.overlay-card-right{
-left: auto; /* Adjust position for smaller screens */
-right: -20%; /* Reset right position */
-width: 70%; /* Adjust width as needed */
-max-width: 600px; /* Limit maximum width */
-}
-
-.image-wrapper-right, .image-wrapper-left {
-width: 80%; /* Reduce image width on smaller screens */
-max-width: 100%; /* Ensure image spans full width */
-height: auto; /* Maintain aspect ratio */
-}
 }
 
 
