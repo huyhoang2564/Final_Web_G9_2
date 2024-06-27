@@ -17,7 +17,11 @@
     <link rel="stylesheet" href="src/css/course.css">
     <script type="module" src="/src/scripts/course.js"></script>
     <title>Tu Bao Makeup Course</title>
-
+    <meta name="description" content="Tu Bao Makeup Academy with over 10 years of experience in makeup and training students, providing significant value to the community.">
+    <meta property="og:title" content="Tu Bao Makeup Academy">
+    <meta property="og:description" content="Tu Bao Makeup Academy with over 10 years of experience in makeup and training students, providing significant value to the community.">
+    <meta property="og:image" content="/src/image/logo/tubaologo.png">
+    <meta property="og:url" content="http://www.tubaomakeup.com">
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-LEDDYFYFQB"></script>
 </head>
 <body>
@@ -68,50 +72,30 @@
                 </ul>
             </nav>
         </div>
-
-    </div>
-
-    <!-- Video Background Section - header -->
-    <div class="w-full h-400 relative bg-fixed bg-cover bg-center bg-no-repeat video-section" style="height: 470px;">
-        <video class="h-full w-full object-cover rounded-lg" autoplay muted loop>
-            <source src="src/video/Dior Forever - The Iconic Clean Foundation.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-        </video>
-        <div class="absolute inset-0 flex items-center justify-center h-full bg-black bg-opacity-50">
-            <div class="text-center text-white animate__animated animate__fadeIn">
-                <h1 class="text-6xl font-bold mb-4">Welcome to Your Makeup Journey</h1>
-                <p class="text-xl mb-8">Discover new skills and technic that awake your beauty</p>
-            </div>
-        </div>
-    </div>
-
-    <!-- Video Background Section - header --> 
-
-
-
-      <!-- Section for Courses -->
-  <section class="section">
-    <div class="top-collections">Our Courses</div>
-    <div class="divider">
-      <div class="best-offers">BEST OFFERS</div>
-    </div>
-
-
     </header>
     
-      <!--Toggle Menu start from here-->
-      <script>
-        function toggleMenu(icon) {
-            let menu = document.querySelector('.nav-menu');
-            icon.name = icon.name === 'menu-outline' ? 'close-outline' : 'menu-outline';
-            menu.classList.toggle('top-[-400px]');
-            menu.classList.toggle('opacity-0');
-            menu.classList.toggle('top-[70px]');
-            menu.classList.toggle('opacity-100');
-        }
-      </script>
-      <!--Toggle Menu end here-->
-     
+        <!--Toggle Menu start from here-->
+        <script>
+            function toggleMenu(icon) {
+                let menu = document.querySelector('.nav-menu');
+                icon.name = icon.name === 'menu-outline' ? 'close-outline' : 'menu-outline';
+                menu.classList.toggle('top-[-400px]');
+                menu.classList.toggle('opacity-0');
+                menu.classList.toggle('top-[70px]');
+                menu.classList.toggle('opacity-100');
+            }
+        </script>
+        <!--Toggle Menu end here-->
+
+
+        <!-- JavaScript function to scroll to the section -->
+        <script>
+            function scrollToSection() {
+                document.getElementById('contact-form-section').scrollIntoView({ behavior: 'smooth' });
+            }
+        </script>
+ 
+
     
       <!-- Video Background Section -->
         <article>
@@ -129,116 +113,125 @@
             </div>
         </article>
 
-<<<<<<< HEAD
 
     <!-- Section for Courses -->
-    <section class="section">
-        <div class="top-collections">Our Courses</div>
-        <div class="divider">
-=======
-    <main class="bg-custom" >
+    <main class="bg-custom " >
         <!-- Tittle -->  
-        <section class="section">
+      <section class="section">
           <div class="top-collections">Our Courses</div>
           <div class="divider">
->>>>>>> d4444eb (add background)
-            <div class="best-offers">BEST OFFERS</div>
+              <div class="best-offers">BEST OFFERS</div>
           </div>
-        </section> 
+      </section> 
   
-  
-  
-      <!--Personal Makeup Course -->
-      <article id="personal-makeup-course" class="container mx-auto py-16">
-        <div class="relative-container">
-          <div class="image-wrapper image-wrapper-left">
-            <img src="/src/image/coursepage/personal-makeup-course.webp" alt="Makeup Image" class="rounded-2xl shadow-lg" style="width: 750px; height: 450px;">
-            <div class="overlay-card overlay-card-right">
-              <div class="max-w-lg p-5 flex flex-col justify-center relative overflow-hidden">
-                <div class="max-w-7xl mx-auto">
-                  <div class="relative group cursor-pointer">
-                    <div class="absolute -inset-1 bg-gradient-to-r from-pink-200 to-orange-300 rounded-lg blur opacity-25 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
-                    <div class="relative px-7 py-6 bg-white ring-1 ring-gray-900/5 rounded-lg leading-none flex items-top justify-start space-x-6">
-                      <div class="space-y-2">
-                        <h3 class="text-2xl font-bold text-black mb-4">Personal Makeup Course</h3>
-                        <p class="text-justify text-slate-800">Receive hands-on guidance in flattering techniques, color selection, and application, empowering you to achieve a flawless, radiant makeup application with confidence.<br>This customized course is perfect for beginners and those looking to refine their makeup mastery.</p>
-                        <div class="flex justify-center mt-4">
-                          <button class="bg-black text-white font-bold py-2 px-4 rounded mr-2 hover:bg-gray-700 transition duration-300 transform hover:scale-105">Enroll now</button>
-                          <button class="bg-gray-300 text-black font-bold py-2 px-4 rounded hover:bg-gray-200 transition duration-300 transform hover:scale-105">Learn more</button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+      <!-- Personal Makeup Course -->
+      <article id="personal-makeup-course" class="py-16 my-20">
+
+        <!-- Container -->
+        <div class="relative flex flex-col items-center mx-auto lg:flex-row lg:max-w-5xl xl:max-w-6xl">
+
+          <!-- Image Column -->
+          <div class="w-full h-64 sm:w-9/12 lg:w-1/2 lg:h-auto">
+            <img class="w-full h-full object-cover rounded-2xl lg:max-w-[800px] lg:h-[600px]" src="https://i.pinimg.com/474x/db/ec/bc/dbecbc7f12b12f50c0a566e046892909.jpg" alt="Winding mountain road">
+          </div>
+          <!-- Close Image Column -->
+
+          <!-- Text Column -->
+          <div class="max-w-lg rounded-2xl bg-white md:max-w-2xl md:z-10 md:shadow-lg md:absolute md:top-0 md:mt-48 lg:w-3/5 lg:right-0 lg:mt-20 lg:mr-20 xl:mt-24 xl:mr-12">
+            <!-- Text Wrapper -->
+            <div class="flex flex-col p-12 md:px-16">
+                <h2 class="text-2xl font-medium uppercase text-orange-950 lg:text-4xl">Bridal Makeup Course</h2>
+                <p class="mt-4">
+                  Learn the art of makeup from the basics to advanced techniques in our personal makeup course. Our experienced instructors will guide you through hands-on workshops and provide personalized feedback to help you develop your makeup skills.
+                </p>
+                <!-- Button Container -->
+                <div class="buttons flex justify-center mt-8">
+                  <button class="register-btn bg-orange-700 text-white py-3 px-6 rounded-lg mr-5 hover:bg-orange-950 transition duration-300">Enroll now</button>
+                  <button class="learn-btn bg-white text-orange-900 border-2 border-orange-950 py-3 px-6 rounded-lg hover:bg-orange-900 hover:text-white transition duration-300">Read more</button>
                 </div>
-              </div>
             </div>
+            <!-- Close Text Wrapper -->
           </div>
-        </div>
-      </article> <!--Personal Makeup Course -->
-  
-      <!-- Professional Makeup Course -->
-      <article id="professional-makeup-course" class="container mx-auto py-16">
-        <div class="relative-container">
-          <div class="image-wrapper image-wrapper-right">
-            <img src="/src/image/coursepage/professional-makeup-course.webp"
-                 alt="Makeup Image"
-                 class="rounded-2xl shadow-lg transition-transform duration-500 hover:scale-105"
-                 style="width: 750px; height: 450px;">
-            <div class="overlay-card overlay-card-left">
-              <div class="max-w-lg p-5 flex flex-col justify-center relative overflow-hidden">
-                <div class="max-w-lg mx-auto">
-                  <div class="relative group cursor-pointer">
-                    <div class="absolute -inset-1 bg-gradient-to-r from-orange-300 to-pink-100 rounded-lg blur opacity-25 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
-                    <div class="relative px-7 py-6 bg-white ring-1 ring-gray-900/5 rounded-2xl leading-none flex items-top justify-start space-x-6">
-                      <div class="space-y-2">
-                        <h3 class="text-2xl font-bold text-black mb-4">Professional Makeup Course</h3>
-                        <p class="text-justify text-slate-800">Dive deep into complexion perfection, transformative eye techniques, sculpted lips, and editorial-worthy looks.<br> Join us now for an immersive learning experience that will take your makeup skills to new heights.</p>
-                        <div class="flex justify-center mt-4">
-                          <button class="bg-black text-white font-bold py-2 px-4 rounded mr-2 hover:bg-gray-700 transition duration-300 transform hover:scale-105">Enroll now</button>
-                          <button class="bg-gray-300 text-black font-bold py-2 px-4 rounded hover:bg-gray-200 transition duration-300 transform hover:scale-105">Learn more</button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          <!-- Close Text Column -->
+
         </div>
       </article>
-       <!--Professional Makeup Course -->
-  
-      <!--Bridal Makeup Course -->
-      <article id="bridal-makeup-course" class="container mx-auto py-16">
-        <div class="relative-container">
-          <div class="image-wrapper image-wrapper-left">
-            <img src="/src/image/coursepage/bridal-makeup-course.jpg" alt="Makeup Image" class="rounded-2xl shadow-lg" style="width: 750px; height: 450px;">
-            <div class="overlay-card overlay-card-right">
-              <div class="max-w-lg p-5 flex flex-col justify-center relative overflow-hidden">
-                <div class="max-w-7xl mx-auto">
-                  <div class="relative group cursor-pointer">
-                    <div class="absolute -inset-1 bg-gradient-to-r from-pink-100 to-orange-300 rounded-lg blur opacity-25 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
-                    <div class="relative px-7 py-6 bg-white ring-1 ring-gray-900/5 rounded-lg leading-none flex items-top justify-start space-x-6">
-                      <div class="space-y-2">
-                        <h3 class="text-2xl font-bold text-black mb-4">Bridal Makeup Course</h3>
-                        <p class="text-justify text-slate-800">Learn the art of makeup from the basics to advanced techniques in our personal makeup course. Our experienced instructors will guide you through hands-on workshops and provide personalized feedback to help you develop your makeup skills.</p>
-                        <div class="flex justify-center mt-4">
-                          <button class="bg-black text-white font-bold py-2 px-4 rounded mr-2 hover:bg-gray-700 transition duration-300 transform hover:scale-105">Enroll now</button>
-                          <button class="bg-gray-300 text-black font-bold py-2 px-4 rounded hover:bg-gray-200 transition duration-300 transform hover:scale-105">Learn more</button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+
+
+
+
+
+<!-- Professional Makeup Course -->
+<article id="professional-makeup-course" class="py-16 my-20">
+  <!-- Container -->
+  <div class="relative flex flex-col items-center mx-auto lg:flex-row-reverse lg:max-w-5xl xl:max-w-6xl">
+
+    <!-- Image Column -->
+    <div class="w-full h-64 lg:w-1/2 sm:w-9/12 lg:h-auto">
+        <img class="h-full rounded-2xl w-full object-cover lg:max-w-[800px] lg:max-h-[600px]" src="https://i.pinimg.com/474x/c7/50/0b/c7500be99742205bccf389bee48badd5.jpg" alt="Winding mountain road">
+    </div>
+    <!-- Close Image Column -->
+
+    <!-- Text Column -->
+    <div class="max-w-lg rounded-2xl bg-white md:max-w-2xl md:z-10 md:shadow-lg md:absolute md:top-0 md:mt-48 lg:w-3/5 lg:left-0 lg:mt-20 lg:ml-20 xl:mt-24 xl:ml-12">
+      <!-- Text Wrapper -->
+      <div class="flex flex-col p-12 md:px-16">
+          <h2 class="text-2xl font-medium uppercase text-orange-950 lg:text-4xl">Winding Mountain Road</h2>
+          <p class="mt-4">
+            Dive deep into complexion perfection, transformative eye techniques, sculpted lips, and editorial-worthy looks.<br> Join us now for an immersive learning experience that will take your makeup skills to new heights.
+          </p>
+          <!-- Button Container -->
+            <div class="buttons flex justify-center mt-8">
+              <button class="register-btn bg-orange-700 text-white py-3 px-6 rounded-lg mr-5 hover:bg-orange-950 transition duration-300">Enroll now</button>
+              <button class="learn-btn bg-white text-orange-900 border-2 border-orange-950 py-3 px-6 rounded-lg hover:bg-orange-900 hover:text-white transition duration-300">Read more</button>
             </div>
+      </div>
+      <!-- Close Text Wrapper -->
+    </div>
+    <!-- Close Text Column -->
+
+  </div>
+</article>
+
+
+
+      <!-- Bridal Makeup Course -->
+      <article id="bridal-makeup-course" class="py-16 my-20">
+        <!-- Container -->
+        <div class="relative flex flex-col items-center mx-auto lg:flex-row lg:max-w-5xl xl:max-w-6xl">
+
+          <!-- Image Column -->
+          <div class="w-full h-64 sm:w-9/12 lg:w-1/2 lg:h-auto">
+            <img class="w-full h-full object-cover rounded-2xl lg:max-w-[800px] lg:h-[600px]" src="https://i.pinimg.com/736x/e8/6d/f8/e86df8e7da2684f97cd4682921deb77d.jpg" alt="Winding mountain road">
           </div>
+          <!-- Close Image Column -->
+
+          <!-- Text Column -->
+          <div class="max-w-lg rounded-2xl bg-white md:max-w-2xl md:z-10 md:shadow-lg md:absolute md:top-0 md:mt-48 lg:w-3/5 lg:right-0 lg:mt-20 lg:mr-20 xl:mt-24 xl:mr-12">
+            <!-- Text Wrapper -->
+            <div class="flex flex-col p-12 md:px-16">
+                <h2 class="text-2xl font-medium uppercase text-orange-950 lg:text-4xl">Bridal Makeup Course</h2>
+                <p class="mt-4">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                    ex ea commodo consequat.
+                </p>
+                <!-- Button Container -->
+                <div class="buttons flex justify-center mt-8">
+                  <button class="register-btn bg-orange-700 text-white py-3 px-6 rounded-lg mr-5 hover:bg-orange-950 transition duration-300">Enroll now</button>
+                  <button class="learn-btn bg-white text-orange-900 border-2 border-orange-950 py-3 px-6 rounded-lg hover:bg-orange-900 hover:text-white transition duration-300">Read more</button>
+                </div>
+            </div>
+            <!-- Close Text Wrapper -->
+          </div>
+          <!-- Close Text Column -->
+
         </div>
-      </article> <!--Bridal Makeup Course -->
-  
+      </article>
+
   
       <!-- Founder's Quote -->
-      <section class="relative py-20 overflow-hidden bg-gradient-to-br from-transparent via-transparent to-transparent shadow-2xl sm:py-24 md:py-24 border-2 border-yellow-200">
+      <section class="relative py-20 overflow-hidden bg-gradient-to-br from-transparent via-transparent to-transparent shadow-2xl sm:py-24 md:py-24 border-2 border-gray-500">
         <div class="relative max-w-6xl px-16 mx-auto xl:px-0">
           <svg class="absolute top-0 left-0 hidden w-32 h-32 -mt-3 -ml-16 text-orange-500 opacity-50 xl:block" stroke="currentColor" fill="none" viewBox="0 0 144 144">
             <path stroke-width="2" d="M41.485 15C17.753 31.753 1 59.208 1 89.455c0 24.664 14.891 39.09 32.109 39.09 16.287 0 28.386-13.03 28.386-28.387 0-15.356-10.703-26.524-24.663-26.524-2.792 0-6.515.465-7.446.93 2.327-15.821 17.218-34.435 32.11-43.742L41.485 15zm80.04 0c-23.268 16.753-40.02 44.208-40.02 74.455 0 24.664 14.891 39.09 32.109 39.09 15.822 0 28.386-13.03 28.386-28.387 0-15.356-11.168-26.524-25.129-26.524-2.792 0-6.049.465-6.98.93 2.327-15.821 16.753-34.435 31.644-43.742L121.525 15z"></path>
@@ -268,7 +261,7 @@
       <!--founder quote-->
      
       <!--Map & Contact Form start from here-->
-      <section class="py-10">
+      <section class="pt-10">
         <section id="contact-form-section">  
           <div class="mb-32 mt-16">
             <div id="map" class="relative h-[300px] overflow-hidden bg-cover bg-[50%] bg-no-repeat">
@@ -280,7 +273,7 @@
               <!--Contact Form start from here-->
               <div class="container px-6 md:px-12">
                 <div class="block rounded-3xl bg-[hsla(0,0%,100%,0.8)] px-6 py-12 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] md:py-16 md:px-12 -mt-[100px] backdrop-blur-[30px] border border-gray-300">
-                  <h2 class="text-black font-bold text-5xl mb-8">Book Your Own Appoinment Here</h2>
+                  <h2 class="text-black font-bold text-5xl mb-8 text-center">Book Your Own Appoinment Here</h2>
                   <div class="flex flex-wrap justify-center">
                     <div class="w-full md:w-1/2 lg:w-1/3 md:px-3 lg:mb-0">
                       <form>
@@ -362,142 +355,118 @@
           </div>
         </section>
 
-    </main>
-    <!--Map & Booking Form end here-->
+  
     <!--Call to Action-->
-    <div class="bg-gray-950 text-white py-24">
-        <h2 class="text-5xl font-bold text-center mb-10">Excited to work together on your next project?</h2>
-        <div class="flex justify-center space-x-4">
-            <button class="bg-gray-800 border hover:bg-gray-600 px-6 py-3 rounded-lg btn">&larr; Learn more</button>
-            <button class="bg-gray-500 border hover:bg-gray-400 px-6 py-3 rounded-lg btn">Get in touch &rarr;</button>
-        </div>
-    </div>
-
-        <!--Map & Contact Form end here-->
-  
-          <!--Call to Action-->
-          <section class="bg-black text-white py-24">
-            <h2 class="text-5xl font-bold text-center mb-6">Excited to start your new makeup career?</h2>
-            <div class="flex justify-center space-x-4">
-                <button class="bg-black border hover:bg-gray-600 px-6 py-3 rounded-lg btn">Learn more</button>
-                <button class="bg-gray-500 border hover:bg-gray-400 px-6 py-3 rounded-lg btn">Get in touch &rarr;</button>
-            </div>
-          </section> 
-  
-      <!-- JavaScript function to scroll to the section -->
-      <script>
-        function scrollToSection() {
-            document.getElementById('contact-form-section').scrollIntoView({ behavior: 'smooth' });
-        }
-      </script>
-    </main>  
+    <div class="bg-gray-950 text-white py-24 px-10">
+      <h2 class="text-5xl font-bold text-center mb-10">Excited to work together on your next project?</h2>
+      <div class="flex justify-center space-x-4">
+          <button class="bg-gray-800 border hover:bg-gray-600 px-6 py-3 rounded-lg btn">&larr; Learn more</button>
+          <button class="bg-gray-500 border hover:bg-gray-400 px-6 py-3 rounded-lg btn">Get in touch &rarr;</button>
+      </div>
+  </div>
+  </main>
+  <!--Footer start from here-->
+  <footer class="w-full">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <!--Grid-->
+          <div class="grid grid-cols-12 gap-8 py-14 lg:grid-cols-8">
+              <div class="mb-0 col-span-full lg:col-span-3 ">
+              
+                  <div class="flex justify-between items-center">
+                      <div class="text-2xl foot-font cursor-pointer flex items-center">
+                          <a href="index.html" class="flex justify-center lg:justify-start items-center">
+                              <img src="src/image/logo/tubaologo.png" alt="Tubao Makeup" class="foot-logo items-center mr-2">
+                              TuBao Makeup Academy
+                          </a>
+                      </div>
+                  </div>
 
 
-    <!--Footer start from here-->
-    <footer class="w-full">
-        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <!--Grid-->
-            <div class="grid grid-cols-12 gap-8 py-14 lg:grid-cols-8">
-                <div class="mb-0 col-span-full lg:col-span-3 ">
-                
-                    <div class="flex justify-between items-center">
-                        <div class="text-2xl foot-font cursor-pointer flex items-center">
-                            <a href="index.html" class="flex justify-center lg:justify-start items-center">
-                                <img src="src/image/logo/tubaologo.png" alt="Tubao Makeup" class="foot-logo items-center mr-2">
-                                TuBao Makeup Academy
-                            </a>
-                        </div>
-                    </div>
+                  <p class="py-8  text-gray-500 lg:max-w-xs text-center lg:text-left">Trusted in more than 100 countries & 5 million customers. Follow us on social media.</p>
+                  <div class="flex mt-4 space-x-4 justify-center lg:justify-start sm:mt-0">
+                      <a href="https://www.tiktok.com/@vnuk.official" class="w-8 h-8 rounded-full transition-all duration-500 flex justify-center items-center">
+                          <img src="src/image/social/ttokicon/icons8-tiktok-48.png" alt="TikTok Icon" class="w-full h-full rounded-full">
+                      </a>
+                      <a href="https://www.facebook.com/vnuk.edu.vn" class="relative w-8 h-8 rounded-full transition-all duration-500 flex justify-center items-center">
+                          <!-- Facebook Icon -->
+                          <img src="src/image/social/fbicon/icons8-facebook-48.png" alt="Facebook Icon" class="w-full h-full rounded-full">
+                      </a>
+                      <a href="https://www.instagram.com/vnuk.edu.vn/" class="relative w-8 h-8 rounded-full transition-all duration-500 flex justify-center items-center ">
+                          <!-- Instagram Icon -->
+                          <img src="src/image/social/igicon/icons8-instagram-48.png" alt="Facebook Icon" class="w-full h-full rounded-full">
+                      </a>
+                      <a href="https://www.youtube.com/@vnukdanang" class="relative w-8 h-8 rounded-full transition-all duration-500 flex justify-center items-center">
+                          <!-- YouTube Icon -->
+                          <img src="src/image/social/yticon/icons8-youtube-48.png" alt="YouTube Icon" class="w-full h-full rounded-full">
+                      </a>
+                  </div>
+              
+              </div>
+              <!--End Col-->
+              <div class="w-full text-center lg:w-auto lg:text-left col-span-full sm:col-span-4 md:col-span-4 lg:col-span-2 ">
+                  <h4 class="text-lg text-gray-900 font-medium mb-7">Get In Touch</h4>
+                  <ul class="text-gray-600  transition-all duration-500">
+                      <li class="mb-6">support@tubaomakeup.com</li>
+                      <li class="mb-6">+84 123 456 789</li>
+                      <li class="mb-6" >158A Le Loi street, Danang, Vietnam.</li>
+                  </ul>
+              </div>
+              <!--End Col-->
+              <div class="w-full text-center lg:w-auto lg:text-left col-span-full sm:order-last sm:col-span-4 md:col-span-4 lg:order-none lg:col-span-1">
+                  <h4 class="text-lg text-gray-900 font-medium mb-7">Home</h4>
+                  <ul class="text-gray-600 transition-all duration-500  ">
+                      <li class="mb-6"><a href="src/html/intro.html"  class="text-gray-600 hover:text-gray-900">Introduction</a></li>
+                      <li class="mb-6"><a href="src/html/course.html"  class=" text-gray-600 hover:text-gray-900">Course</a></li>
+                      <li class="mb-6"><a href="src/html/service.html"  class=" text-gray-600 hover:text-gray-900">Service</a></li>
+                      <li class="mb-6"><a href="#"  class=" text-gray-600 hover:text-gray-900">Library</a></li>
+                      <li class="sm:mb-6"><a href="src/html/blog.html"  class=" text-gray-600 hover:text-gray-900">Blog</a></li>
+                  </ul>
+              </div>
+              <!--End Col-->
+              <div class="w-full text-center lg:w-auto lg:text-left col-span-full sm:col-span-4 md:col-span-4 lg:col-span-2 ">
+                  <h4 class="text-lg text-center text-gray-900 font-medium mb-7 lg:text-left">Newsletter</h4>
+                  <div class="flex flex-col items-center lg:items-start">
+                      <input type="text" class="w-full h-12 border border-gray-300 rounded-full py-2.5 px-5 shadow-sm text-gray-800 mb-5 text-center lg:text-left placeholder:text-gray-400 focus:outline-none focus:border-gray-500"  placeholder="Your email here.."/>
+                      <button type="submit" class="h-11 py-3 px-6 bg-black transition-all duration-500 shadow-md rounded-full text-sm text-white font-semibold w-fit hover:gray-500">Subscribe</button>
+                  </div>
+              </div>
+          
+          </div>
+          <!--Grid-->
+          <div class="py-7 border-t border-gray-200">
+              <div class="flex items-center justify-center flex-col lg:justify-between lg:flex-row">
+                  <span class="text-sm text-gray-500 ">©<a href="https://tubaomakeup.com">TuBao Makeup</a> 2024, All rights reserved.</span>
+                  <ul class="flex items-center gap-9 mt-4 lg:mt-0">
+                      <li><a href="javascript:;"  class="text-sm text-gray-500">Terms</a></li>
+                      <li><a href="javascript:;"  class="text-sm text-gray-500">Privacy</a></li>
+                      <li><a href="javascript:;"  class="text-sm text-gray-500">Cookies</a></li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+  </footer>
 
+  <script>
+      function toggleMenu(icon) {
+          let menu = document.querySelector('.nav-menu');
+          icon.name = icon.name === 'menu-outline' ? 'close-outline' : 'menu-outline';
+          menu.classList.toggle('top-[-400px]');
+          menu.classList.toggle('opacity-0');
+          menu.classList.toggle('top-[70px]');
+          menu.classList.toggle('opacity-100');
+      }
+  </script>
 
-                    <p class="py-8  text-gray-500 lg:max-w-xs text-center lg:text-left">Trusted in more than 100 countries & 5 million customers. Follow us on social media.</p>
-                    <div class="flex mt-4 space-x-4 justify-center lg:justify-start sm:mt-0">
-                        <a href="https://www.tiktok.com/@vnuk.official" class="w-8 h-8 rounded-full transition-all duration-500 flex justify-center items-center">
-                            <img src="src/image/social/ttokicon/icons8-tiktok-48.png" alt="TikTok Icon" class="w-full h-full rounded-full">
-                        </a>
-                        <a href="https://www.facebook.com/vnuk.edu.vn" class="relative w-8 h-8 rounded-full transition-all duration-500 flex justify-center items-center">
-                            <!-- Facebook Icon -->
-                            <img src="src/image/social/fbicon/icons8-facebook-48.png" alt="Facebook Icon" class="w-full h-full rounded-full">
-                        </a>
-                        <a href="https://www.instagram.com/vnuk.edu.vn/" class="relative w-8 h-8 rounded-full transition-all duration-500 flex justify-center items-center ">
-                            <!-- Instagram Icon -->
-                            <img src="src/image/social/igicon/icons8-instagram-48.png" alt="Facebook Icon" class="w-full h-full rounded-full">
-                        </a>
-                        <a href="https://www.youtube.com/@vnukdanang" class="relative w-8 h-8 rounded-full transition-all duration-500 flex justify-center items-center">
-                            <!-- YouTube Icon -->
-                            <img src="src/image/social/yticon/icons8-youtube-48.png" alt="YouTube Icon" class="w-full h-full rounded-full">
-                        </a>
-                    </div>
-                
-                </div>
-                <!--End Col-->
-                <div class="w-full text-center lg:w-auto lg:text-left col-span-full sm:col-span-4 md:col-span-4 lg:col-span-2 ">
-                    <h4 class="text-lg text-gray-900 font-medium mb-7">Get In Touch</h4>
-                    <ul class="text-gray-600  transition-all duration-500">
-                        <li class="mb-6">support@tubaomakeup.com</li>
-                        <li class="mb-6">+84 123 456 789</li>
-                        <li class="mb-6" >158A Le Loi street, Danang, Vietnam.</li>
-                    </ul>
-                </div>
-                <!--End Col-->
-                <div class="w-full text-center lg:w-auto lg:text-left col-span-full sm:order-last sm:col-span-4 md:col-span-4 lg:order-none lg:col-span-1">
-                    <h4 class="text-lg text-gray-900 font-medium mb-7">Home</h4>
-                    <ul class="text-gray-600 transition-all duration-500  ">
-                        <li class="mb-6"><a href="src/html/intro.html"  class="text-gray-600 hover:text-gray-900">Introduction</a></li>
-                        <li class="mb-6"><a href="src/html/course.html"  class=" text-gray-600 hover:text-gray-900">Course</a></li>
-                        <li class="mb-6"><a href="src/html/service.html"  class=" text-gray-600 hover:text-gray-900">Service</a></li>
-                        <li class="mb-6"><a href="#"  class=" text-gray-600 hover:text-gray-900">Library</a></li>
-                        <li class="sm:mb-6"><a href="src/html/blog.html"  class=" text-gray-600 hover:text-gray-900">Blog</a></li>
-                    </ul>
-                </div>
-                <!--End Col-->
-                <div class="w-full text-center lg:w-auto lg:text-left col-span-full sm:col-span-4 md:col-span-4 lg:col-span-2 ">
-                    <h4 class="text-lg text-center text-gray-900 font-medium mb-7 lg:text-left">Newsletter</h4>
-                    <div class="flex flex-col items-center lg:items-start">
-                        <input type="text" class="w-full h-12 border border-gray-300 rounded-full py-2.5 px-5 shadow-sm text-gray-800 mb-5 text-center lg:text-left placeholder:text-gray-400 focus:outline-none focus:border-gray-500"  placeholder="Your email here.."/>
-                        <button type="submit" class="h-11 py-3 px-6 bg-black transition-all duration-500 shadow-md rounded-full text-sm text-white font-semibold w-fit hover:gray-500">Subscribe</button>
-                    </div>
-                </div>
-            
-            </div>
-            <!--Grid-->
-            <div class="py-7 border-t border-gray-200">
-                <div class="flex items-center justify-center flex-col lg:justify-between lg:flex-row">
-                    <span class="text-sm text-gray-500 ">©<a href="https://tubaomakeup.com">TuBao Makeup</a> 2024, All rights reserved.</span>
-                    <ul class="flex items-center gap-9 mt-4 lg:mt-0">
-                        <li><a href="javascript:;"  class="text-sm text-gray-500">Terms</a></li>
-                        <li><a href="javascript:;"  class="text-sm text-gray-500">Privacy</a></li>
-                        <li><a href="javascript:;"  class="text-sm text-gray-500">Cookies</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </footer>
+  <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-    <script>
-
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'G-LEDDYFYFQB');
-    </script>
+      gtag('config', 'G-LEDDYFYFQB');
+  </script>
 
       
 
-        function toggleMenu(icon) {
-            let menu = document.querySelector('.nav-menu');
-            icon.name = icon.name === 'menu-outline' ? 'close-outline' : 'menu-outline';
-            menu.classList.toggle('top-[-400px]');
-            menu.classList.toggle('opacity-0');
-            menu.classList.toggle('top-[70px]');
-            menu.classList.toggle('opacity-100');
-        }
-    </script>
-
-        
-
-   
-
+ 
 </body>
 </html>
