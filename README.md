@@ -5,12 +5,9 @@ Welcome to the **Tu Bao Makeup Academy Website**is a premier institution dedicat
 
 ## Technologies
 This project is built with robust and modern technologies to ensure high performance and scalability:
-- **EJS templates** for rendering HTML pages.
-- **Prisma ORM** for database access.
-- **MySQL database.**
+- **HTML** for design 
 - **Tailwind CSS** for styling.
-- **Vite** for building the frontend assets. 
-
+- **Javascript** for get animation and transition
 ## Our mockup: 
 [huyhoang2564/Final_Web_G9_2](https://github.com/huyhoang2564/Final_Web_G9_2)
 
@@ -23,8 +20,6 @@ This project is built with robust and modern technologies to ensure high perform
 
 Before running this project, ensure you have the following installed:
 
-- [Node.js](https://nodejs.org/en/download/)
-- [MySQL](https://dev.mysql.com/downloads/mysql/)
 - [Git](https://git-scm.com/downloads)
 
 ## Project Structure
@@ -52,35 +47,6 @@ Install all required dependencies using npm:
 npm install
 ```
 
-3. **Database Setup**
-
-- Ensure MySQL is running on your machine.
-- Create a new database called `apps`.
-- Update the database configuration in environment variables (`.env` file).
-
-Create `.env` like `.env.example` and set the values. For example:
-```
-PORT=3000
-SITE_NAME="LBJ"
-NODE_ENV=development
-DATABASE_URL="mysql://root:password@localhost:3306/apps"
-```
-
-4. **Run Database Migrations**
-
-Run the migrations to set up the database schema:
-
-```bash
-npx prisma migrate dev
-```
-
-5. **Seed the Database**
-
-Populate the database with initial data:
-
-```bash
-node prisma/seed.js
-```
 
 6. **Start the Server**
 
@@ -92,14 +58,6 @@ npm start
 If you want to run in development mode, use:
 ```bash
 npm run dev
-```
-
-### Reset Database
-
-To reset the database, you could run the following command to undo all migrations and re-run them.
-```
-npx prisma migrate reset
-node prisma/seed.js
 ```
 
 ## Contributors
