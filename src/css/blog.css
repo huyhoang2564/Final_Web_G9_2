@@ -49,7 +49,7 @@
 
 
 .bg-custom {
-    background: linear-gradient(135deg, rgba(164, 90, 56, 0.8), rgba(240, 236, 233, 0.8), rgba(184, 208, 227, 0.8)), url('https://media.istockphoto.com/id/1159776728/vi/vec-to/n%E1%BB%81n-h%E1%BB%93ng-satin-l%E1%BB%A5a-m%E1%BB%81m-m%E1%BA%A1i-minh-h%E1%BB%8Da-vect%C6%A1.jpg?s=612x612&w=0&k=20&c=wDPUmSRNkkrCe6lJ55UJkWyAdSU3NuqM-3uO130xqkU=');
+    background: linear-gradient(135deg, rgba(250, 185, 150, 0.8), rgba(240, 236, 233, 0.8), rgba(184, 208, 227, 0.8)), url('https://media.istockphoto.com/id/1159776728/vi/vec-to/n%E1%BB%81n-h%E1%BB%93ng-satin-l%E1%BB%A5a-m%E1%BB%81m-m%E1%BA%A1i-minh-h%E1%BB%8Da-vect%C6%A1.jpg?s=612x612&w=0&k=20&c=wDPUmSRNkkrCe6lJ55UJkWyAdSU3NuqM-3uO130xqkU=');
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
@@ -115,18 +115,16 @@
 
 .outer-card {
     background-color: white;
-    padding: 20px;
+    padding: 10px;
     display: flex;
     gap: 20px;
     border-radius: 10px;
-    margin: 0 20px;
 }
 
 
 .inner-card {
-    background-color: #fbe5e1; /* Màu nền hồng nhạt */
-    box-shadow: 0 4px 6px rgb(149, 128, 128);
-    padding: 20px;
+    background-color: #ffffff; /* Màu nền hồng nhạt */
+    box-shadow: 0 4px 6px rgb(80, 77, 74);
     width: 40%;
     border-radius: 10px;
     border: 2px solid #d4aea0; /* Viền màu hồng sáng */
@@ -182,17 +180,6 @@
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
 }
 
-
-.container-custom {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-
-.latest-articles-title {
-    font-size: 1rem;
-}
 
 
 .latest-article-card {
@@ -303,7 +290,6 @@
 }
 .video-section {
     position: relative;
-    width: 100vw;
     height: 100vh;
     overflow: hidden;
 }
