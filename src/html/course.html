@@ -70,74 +70,75 @@
             </ul>
         </nav>
     </div>
-      <!--Toggle Menu start from here-->
-      <script>
-          function toggleMenu(icon) {
-              let menu = document.querySelector('.nav-menu');
-              icon.name = icon.name === 'menu-outline' ? 'close-outline' : 'menu-outline';
-              menu.classList.toggle('top-[-400px]');
-              menu.classList.toggle('opacity-0');
-              menu.classList.toggle('top-[70px]');
-              menu.classList.toggle('opacity-100');
-          }
-      </script>
-      <!--Toggle Menu end here-->    
-      <!--Open Contact Us form-->  
-      <script>
-          function openModal() {
-              document.getElementById('contactModal').classList.remove('hidden');
-          }
-      
-          function closeModal() {
-              document.getElementById('contactModal').classList.add('hidden');
-          }
-      </script>
-      <!--Open Contact Us form-->  
-      <!-- Modal -->
-        <div id="contactModal" class="fixed inset-0 bg-gray-900 bg-opacity-75 flex items-center justify-center z-50 hidden">
-          <div class="relative py-3 sm:max-w-xl sm:mx-auto w-full">
-              <div
-                class="absolute inset-0 bg-gradient-to-r from-orange-900 to-orange-800 shadow-lg transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 sm:rounded-3xl">
-              </div>
-              <div class="text-white relative px-4 py-10 bg-orange-700 shadow-lg sm:rounded-3xl sm:p-20">
+    <!--Toggle Menu start from here-->
+    <script>
+        function toggleMenu(icon) {
+            let menu = document.querySelector('.nav-menu');
+            icon.name = icon.name === 'menu-outline' ? 'close-outline' : 'menu-outline';
+            menu.classList.toggle('top-[-400px]');
+            menu.classList.toggle('opacity-0');
+            menu.classList.toggle('top-[70px]');
+            menu.classList.toggle('opacity-100');
+        }
+    </script>
+    <!--Toggle Menu end here-->    
+    <!--Open Contact Us form-->    
+    <script>
+        function openModal() {
+            document.getElementById('contactModal').classList.remove('hidden');
+        }
+
+        function closeModal() {
+            document.getElementById('contactModal').classList.add('hidden');
+        }
+
+        function showSuccessAlert() {
+            alert('Thank you for your message!');
+        }
+    </script>
+    <!--Open Contact Us form-->  
+
+    <!-- Modal -->
+    <div id="contactModal" class="fixed inset-0 bg-gray-900 bg-opacity-75 flex items-center justify-center z-50 hidden">
+        <div class="relative py-3 sm:max-w-xl sm:mx-auto w-full">
+            <div class="absolute inset-0 bg-gradient-to-r from-orange-900 to-orange-800 shadow-lg transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 sm:rounded-3xl">
+            </div>
+            <div class="text-white relative px-4 py-10 bg-orange-700 shadow-lg sm:rounded-3xl sm:p-20">
                 <div class="text-center pb-6">
-                  <h1 class="text-3xl">Contact Us!</h1>
-                  <p class="text-gray-300">Fill up the form below to send us a message.</p>
+                    <h1 class="text-3xl">Contact Us!</h1>
+                    <p class="text-gray-300">Fill up the form below to send us a message.</p>
                 </div>
 
-                <form>
+                <form onsubmit="event.preventDefault(); closeModal(); showSuccessAlert();">
                     <input
                         class="shadow mb-4 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                        type="text" placeholder="Name" name="name">
+                        type="text" placeholder="Name" name="name" required>
 
                     <input
                         class="shadow mb-4 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                        type="email" placeholder="Email" name="email">
+                        type="email" placeholder="Email" name="email" required>
 
                     <input
                         class="shadow mb-4 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                        type="text" placeholder="Subject" name="_subject">
+                        type="tel" placeholder="Phone Number" name="phone" required>
 
                     <textarea
                         class="shadow mb-4 min-h-0 appearance-none border rounded h-64 w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                        type="text" placeholder="Type your message here..." name="message" style="height: 121px;"></textarea>
+                        type="text" placeholder="Type your message here..." name="message" style="height: 121px;" required></textarea>
 
                     <div class="flex justify-between">
                         <input
-                            class="shadow bg-white text-orange-900 border-2 border-orange-950  hover:bg-yellow-900 hover:text-white transition duration-300 font-bold py-2 px-4 rounded-lg focus:outline-none focus:shadow-outline"
+                            class="shadow bg-white text-orange-900 border-2 border-orange-950 hover:bg-yellow-900 hover:text-white transition duration-300 font-bold py-2 px-4 rounded-lg focus:outline-none focus:shadow-outline"
                             type="submit" value="Send ➤">
                         <input
-                            class="shadow  bg-white text-orange-900 border-2 border-orange-950  hover:bg-yellow-900 hover:text-white transition duration-300 font-bold py-2 px-4 rounded-lg focus:outline-none focus:shadow-outline"
-                            type="reset">
+                            class="shadow bg-white text-orange-900 border-2 border-orange-950 hover:bg-yellow-900 hover:text-white transition duration-300 font-bold py-2 px-4 rounded-lg focus:outline-none focus:shadow-outline"
+                            type="reset" value="Reset">
                     </div>
-                </form>             
+                </form>
+                
                 <!-- Close Button -->
-                <button
-                    class="absolute top-0 right-0 mt-4 mr-4 text-white font-bold"
-                    onclick="closeModal()">&times;
-                </button>
-              </div>  
-          </div>
+                <button class="absolute top-0 right-0 mt-4 mr-4 text-white font-bold" onclick="closeModal()">&times;</button>
+            </div>
         </div>
     </div>
   </header>    
