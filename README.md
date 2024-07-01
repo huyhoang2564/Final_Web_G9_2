@@ -14,7 +14,7 @@ This project is built with robust and modern technologies to ensure high perform
 ## Detail of the project
 - [Wireframe](Report/Wireframe/README.md)
 - [Planning & Task](Report/Planning/README.md)
-- [Demo](/src/image/video/Tu%20Bao%20Makeup%20Academy%20-%20Cốc%20Cốc%202024-07-01%2011-43-20.mp4)
+- [Demo](/src/image/video/Demo.mp4)
 
 
 ## Prerequisites
