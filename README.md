@@ -14,6 +14,7 @@ This project is built with robust and modern technologies to ensure high perform
 ## Detail of the project
 - [Wireframe](Report/Wireframe/README.md)
 - [Planning & Task](Report/Planning/README.md)
+- [Demo](/Report/Demo/DemoVideo.mp4)
 
 
 ## Prerequisites
