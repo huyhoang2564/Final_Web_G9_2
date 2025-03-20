@@ -1,0 +1,36 @@
+.foot-font {
+    font-weight: 600;
+    letter-spacing: 0.05em;
+}
+.mr-2 {
+    margin-right: 0.5rem; 
+}
+
+.foot-logo {
+    display: block;
+    height: 50px;
+    width: auto;
+}
+
+a.flex.items-center {
+    display: flex;
+    align-items: center;
+}
+.transition-transform {
+    transition: transform 0.3s ease-in-out;
+}
+.hover-scale:hover {
+    transform: scale(1.05);
+}
+.transition-opacity {
+    transition: opacity 0.3s ease-in-out;
+}
+.hover-opacity:hover {
+    opacity: 0.7;
+}
+.transition-bg {
+    transition: background-color 0.3s ease-in-out;
+}
+.hover-bg-orange:hover {
+    background-color: #ff7043; 
+}
