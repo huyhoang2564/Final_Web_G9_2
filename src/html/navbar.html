@@ -1,0 +1,43 @@
+<!-- src/html/navbar.html -->
+<nav class="px-20 py-5 bg-white shadow md:flex md:justify-between relative z-50">
+    <div class="flex justify-between items-center">
+        <span class="text-2xl nav-font cursor-pointer flex items-center">
+            <img src="/src/image/logo/tubaologo.png" alt="Logo" class="nav-logo w-12 h-auto">
+            <a href="/home" class="satisfy-regular text-gray-800 text-3xl">Tubao Makeup Academy</a>
+        </span>
+        <span class="text-3xl cursor-pointer mx-2 md:hidden block menu-icon" aria-label="Toggle menu" onclick="toggleMenu(this)">
+            <ion-icon name="menu-outline"></ion-icon>
+        </span>
+    </div>
+    <ul class="nav-menu md:flex md:items-center md:static absolute bg-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all duration-300">
+        <li class="mx-4 my-6 md:my-0">
+            <a href="/home" class="scope-one-regular hover:text-yellow-800 duration-500">Home</a>
+        </li>
+        <li class="mx-4 my-6 md:my-0">
+            <a href="/intro" class="scope-one-regular hover:text-yellow-800 duration-500">Introduction</a>
+        </li>
+        <li class="mx-4 my-6 md:my-0">
+            <a href="/course" class="scope-one-regular hover:text-yellow-800 duration-500">Course</a>
+        </li>
+        <li class="mx-4 my-6 md:my-0">
+            <a href="/service" class="scope-one-regular hover:text-yellow-800 duration-500">Service</a>
+        </li>
+        <li class="mx-4 my-6 md:my-0">
+            <a href="/blog" class="scope-one-regular hover:text-yellow-800 duration-500">Blog</a>
+        </li>
+        <li class="mx-4 my-6 md:my-0">
+            <button class="bg-orange-800 text-white quicksand text-base duration-500 px-6 py-2 hover:bg-orange-700 rounded-lg" onclick="openModal()">Contact Now</button>
+        </li>
+    </ul>
+</nav>
+
+<script>
+    function toggleMenu(icon) {
+        let menu = document.querySelector('.nav-menu');
+        icon.name = icon.name === 'menu-outline' ? 'close-outline' : 'menu-outline';
+        menu.classList.toggle('top-[-400px]');
+        menu.classList.toggle('opacity-0');
+        menu.classList.toggle('top-[70px]');
+        menu.classList.toggle('opacity-100');
+    }
+</script>
