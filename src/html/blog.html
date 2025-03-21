@@ -14,7 +14,6 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     
     <script type="module" src="/src/scripts/smoothscroll.js"></script>
-    <link rel="stylesheet" href="/src/css/blog.css">
     <title>Tu Bao Makeup Blog</title>
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-LEDDYFYFQB"></script>
@@ -23,25 +22,41 @@
     <main class="bg-custom">
         <article class="p-20">
             <!-- Top Section -->
-                <div class="flex mx-auto justify-between gap-10">
-                    <a href="/src/html/news.html" class="flex flex-col p-6 bg-white rounded-lg shadow-lg border-2 border-[#d4aea0] transition duration-150 ease-in-out transform hover:shadow-xl hover:-translate-y-1 w-full md:w-1/2 lg:w-1/3">
-                        <div class="flex items-center mb-4">
-                            <span class="category-badge px-3 py-1 rounded-full text-sm bg-orange-500 text-white">Beauty</span>
+            <section>
+                <div class="flex items-center justify-center">
+                  <div class="grid md:grid-cols-2 grid-cols-1 items-center gap-5">
+                    <a href="/src/html/news.html" class="bg-white rounded-2xl border p-6">
+                        <div class="mb-4">
+                            <span class="p-2 px-3 border-orange-900 mb-4 rounded-full font-medium hover:bg-transparent hover:border-orange-800 border bg-orange-400/25 text-orange-800">Beauty</span>
                             <span class="ml-4 text-sm text-gray-500">Jan 24, 2024</span>
                         </div>
-                        <div class="text-2xl font-bold text-gray-800 hover:underline transition duration-150">Makeup Courses Overview: Learn the Art of Beauty</div>
-                        <p class="py-3 text-gray-600">
-                            Discover our comprehensive makeup courses designed for all skill levels. Whether you're a beginner or an aspiring professional, we've got the perfect course for you.
-                        </p>
-                        <div class="lg:py-6 inline-block text-orange-600 hover:underline transition duration-150">Read more &rarr;</div>
+                            <h1 class="mb-2 text-3xl font-bold text-black">Makeup Courses Overview: Learn the Art of Beauty</h1>
+                            <p class="mb-6 text-gray-800">Discover our comprehensive makeup courses designed for all skill levels. Whether you're a beginner or an aspiring professional, we've got the perfect course for you.
+                            </p>
+                      <div class="flex justify-center space-x-5 text-white">
+                        <button class="flex w-full items-center justify-center gap-2 rounded-2xl bg-black p-5 py-3 font-semibold">
+                            Read
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-6 w-6">
+                              <path stroke-linecap="round" stroke-linejoin="round" d="m9 12.75 3 3m0 0 3-3m-3 3v-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                            </svg>
+                        </button>
+                        <button class="flex w-full items-center justify-center gap-1 rounded-2xl bg-orange-500 p-5 py-3 font-semibold text-white hover:bg-orange-700">
+                          Save
+                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-6 w-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                          </svg>
+                        </button>
+                      </div>
                     </a>
-                    <div class="image-placeholder flex-shrink-0">
-                        <img src="/src/image/blog/blog1.jpg" alt="Makeup Courses Overview" class="rounded-lg shadow-md transition duration-150 transform hover:scale-105 h-full object-cover">
+                    <div>
+                      <img src="/src/image/blog/blog1.jpg" alt="" class="md:w-full size-80 rounded-2xl" />
                     </div>
+                  </div>
                 </div>
-
-                <!-- Category Section -->
-                <aside class="w-1/2 rounded-lg border-2 border-orange-900 p-4 mt-16 mx-auto md:mx-0">
+              </section>
+              
+            <!-- Category Section -->
+             <aside class="w-full lg:w-1/2 rounded-lg border-2 border-orange-900 p-4 mt-16 mx-auto md:mx-0">
                     <h2 class="font-os text-lg font-bold">Categories</h2>
                     <ul class="flex items-start flex-wrap mt-4">
                         <li class="flex mx-1">
@@ -81,11 +96,11 @@
                             </a>
                         </li>
                     </ul>
-                </aside>
-                <!-- Category Section -->
+            </aside>
+            <!-- Category Section -->
 
-                <!-- News List Section -->
-                <section class="flex flex-col justify-center py-20 mx-auto">
+            <!-- News List Section -->
+            <section class="flex flex-col justify-center py-20 mx-auto">
                     <div class="flex flex-wrap items-center justify-between mb-8">
                         <h2 class="mr-10 text-4xl font-bold leading-none md:text-5xl">
                             Newest Trends
@@ -274,7 +289,8 @@
                             </div>
                         </div>
                     </div>
-                </section>
+            </section>
+
         </article>   
     </main>
 

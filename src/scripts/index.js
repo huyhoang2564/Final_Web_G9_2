@@ -119,9 +119,9 @@ function attachNavListeners() {
     const links = document.querySelectorAll('.nav-menu a');
     links.forEach(link => {
         link.addEventListener('click', function(event) {
-            event.preventDefault(); // Prevent default link behavior
-            const url = this.getAttribute('href'); // Get the clean URL from the link
-            loadContent(url); // Load the content
+            event.preventDefault(); 
+            const url = this.getAttribute('href'); 
+            loadContent(url); 
         });
     });
 }
