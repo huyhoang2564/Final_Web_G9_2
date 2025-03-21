@@ -23,6 +23,20 @@ html {
     background-position: center;
 }
 
+.bg-modal-front {
+    background: linear-gradient(135deg, rgba(255, 87, 27, 0.8), rgba(255, 247, 247, 0.8), rgba(238, 95, 19, 0.8)), url('https://media.istockphoto.com/id/1159776728/vi/vec-to/n%E1%BB%81n-h%E1%BB%93ng-satin-l%E1%BB%A5a-m%E1%BB%81m-m%E1%BA%A1i-minh-h%E1%BB%8Da-vect%C6%A1.jpg?s=612x612&w=0&k=20&c=wDPUmSRNkkrCe6lJ55UJkWyAdSU3NuqM-3uO130xqkU=');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.bg-modal-back {
+    background: linear-gradient(135deg, #a32d10, rgba(255, 255, 255, 0.8), rgba(170, 62, 4, 0.8)), url('https://media.istockphoto.com/id/1159776728/vi/vec-to/n%E1%BB%81n-h%E1%BB%93ng-satin-l%E1%BB%A5a-m%E1%BB%81m-m%E1%BA%A1i-minh-h%E1%BB%8Da-vect%C6%A1.jpg?s=612x612&w=0&k=20&c=wDPUmSRNkkrCe6lJ55UJkWyAdSU3NuqM-3uO130xqkU=');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
 
 * {
     font-family: 'Instrument Sans', sans-serif; 
