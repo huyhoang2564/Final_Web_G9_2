@@ -1,7 +1,7 @@
 :root {
 --mdc-font-family-default-primary: 'Open Sans';
 --mdc-font-weight-light: 300;
---nav-hover-color: #c98b8b;
+--nav-hover-color: #a86c6c;
 }
 
 
@@ -20,7 +20,7 @@ font-size: 3.5rem;
 .divider::before, .divider::after {
 content: '';
 flex: 1;
-border-bottom: 1px solid var(--nav-hover-color);
+border-bottom: 2px solid var(--nav-hover-color);
 margin: 0 20px;
 }
 
@@ -29,7 +29,7 @@ position: relative;
 display: flex;
 justify-content: center;
 align-items: center;
-overflow: hidden; /* Ensure overflow doesn't cause layout issues */
+overflow: hidden;
 }
 
 

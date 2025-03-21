@@ -3,8 +3,8 @@ function registerNow() {
     alert("Register Now button clicked!");
 }
 
-function learnMore() {
-    alert("Learn More button clicked!");
+function explore() {
+    alert("Explore More button clicked!");
 }
 
 // Countdown timer setup
@@ -40,4 +40,5 @@ function startCountdown() {
     }, 1000);
 }
 
-startCountdown();
+// Start the countdown when the page loads
+document.addEventListener("DOMContentLoaded", startCountdown);

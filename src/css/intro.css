@@ -166,20 +166,20 @@
         top: 50%;
         width: 50px;
         height: 2px;
-        background-color: #000; /* Black color */
+        background-color: #000; 
     }
     .section-title::before {
-        left: -70px; /* Adjusted for better alignment */
+        left: -70px; 
     }
     .section-title::after {
-        right: -70px; /* Adjusted for better alignment */
+        right: -70px; 
     }
     .subtitle {
         text-align: center;
         font-size: 1.5rem;
         font-weight: normal;
-        color: #8B4513; /* Brown color */
-        margin-bottom: 0.2rem; /* Narrower space */
+        color: #8B4513; 
+        margin-bottom: 0.2rem; 
         font-family: 'Brush Script MT', cursive;
     }
 
