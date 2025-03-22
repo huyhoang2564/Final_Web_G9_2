@@ -3,7 +3,18 @@ fetch('/src/html/navbar.html')
     .then(response => response.text())
     .then(data => {
         document.getElementById('navbar-placeholder').innerHTML = data;
-        attachNavListeners(); // Attach event listeners after loading the navbar
+        attachNavListeners(); 
+    })
+    .catch(error => {
+        console.error('There was a problem with the fetch operation:', error);
+    });
+
+// Load Footer
+fetch('/src/html/footer.html')
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById('footer-place-holder').innerHTML = data; 
+        attachNavListeners(); 
     })
     .catch(error => {
         console.error('There was a problem with the fetch operation:', error);
@@ -42,7 +53,7 @@ fetch('/src/html/components/call-action.html')
     });
 
 
-// Function to load the contact map
+// Load the Contact-Map
 function loadContactMap() {
     fetch('/src/html/components/contact-map.html') 
         .then(response => {
@@ -60,27 +71,17 @@ function loadContactMap() {
         });
 }
 
-// Load Footer
-fetch('/src/html/footer.html')
-    .then(response => response.text())
-    .then(data => {
-        document.getElementById('footer-place-holder').innerHTML = data; // Append footer to the end of the body
-    })
-    .catch(error => {
-        console.error('There was a problem with the fetch operation:', error);
-    });
 
-// Function to load content based on the current page
+// Load content based on the current page
 function loadContent(url) {
     // Map clean URLs to actual file paths
     const pathMap = {
         '/': '/src/html/home.html',
-        '/home': '/src/html/home.html',
         '/intro': '/src/html/intro.html',
         '/service': '/src/html/service.html',
         '/course': '/src/html/course.html',
         '/blog': '/src/html/blog.html',
-        '/new': '/src/html/news.html',
+        '/news': '/src/html/news.html',
     };
 
     // Get the actual file path based on the clean URL
@@ -101,7 +102,7 @@ function loadContent(url) {
             history.pushState(null, '', url); 
             
             // Check if the loaded content is one of the pages that should show the contact map
-            if (url === '/home' || url === '/intro' || url === '/course' || url === 'blog' || url === '/') {
+            if (url === '/' || url === '/intro' || url === '/course' || url === 'blog') {
                 loadContactMap(); 
                 loadBookForm();
             } else {
@@ -114,9 +115,8 @@ function loadContent(url) {
         });
 }
 
-// Function to attach event listeners to navbar links
 function attachNavListeners() {
-    const links = document.querySelectorAll('.nav-menu a');
+    const links = document.querySelectorAll('.nav-menu a, .footer-nav a'); 
     links.forEach(link => {
         link.addEventListener('click', function(event) {
             event.preventDefault(); 
