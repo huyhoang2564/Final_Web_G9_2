@@ -9,13 +9,6 @@
 }
 
 
-
-.content-bg {
-    background: none;
-    padding: 0;
-}
-
-
 .full-screen-img {
     width: 100%;
     height: 100vh;
@@ -50,7 +43,7 @@
 
 
 .article-container {
-    padding: 40px 20px;
+    padding: 40px;
     background: #fff;
     max-width: 1200px;
     margin: 0 auto;
