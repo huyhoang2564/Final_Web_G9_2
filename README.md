@@ -1,8 +1,8 @@
 # Tu Bao Makeup Academy
 
 ## Overview
-Welcome to the **Tu Bao Makeup Academy Website**is a premier institution dedicated to providing top-tier education and training in makeup and beauty. Our academy is renowned for its expert instructors, comprehensive curriculum, and state-of-the-art facilities.
-
+The **Tu Bao Makeup Academy** website is designed to streamline the booking of services and the sale of courses. Built with a focus on user experience, the frontend features a clean and intuitive interface developed using HTML, Tailwind CSS, and JavaScript.
+- Visit our UX/UI website at: [TubaoMakeup](https://tubaomakeup.netlify.app/)
 ## Technologies
 This project is built with robust and modern technologies to ensure high performance and scalability:
 - **HTML** for design 
